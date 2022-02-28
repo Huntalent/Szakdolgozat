@@ -1,1 +1,3 @@
-# Bencze_Zsombor_Szakdolgozat_II
+# exprail-canvas
+
+Exprail graph editor
