@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net" modified="2023-04-03T12:55:41.612Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="wSVViH9eVYnvkj7IR3kB" version="21.1.4" type="device">
+  <diagram name="Page-1" id="FnqyPSdki8gtz2eZHb5h">
+    <mxGraphModel dx="1195" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-1" value="&#xa;&lt;h1 style=&quot;border-color: var(--border-color); color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;font style=&quot;border-color: var(--border-color); font-size: 20px;&quot;&gt;Kezdeti időpont:&lt;/font&gt;&lt;/h1&gt;&#xa;&#xa;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="30" width="760" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-4" value="" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="570" y="60" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-5" value="&lt;h1&gt;Saját profil&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="75" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-6" value="&lt;h1&gt;&lt;font style=&quot;font-size: 35px;&quot;&gt;Grafikon rajzoló&lt;/font&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-7" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.aegonalapkezelo.hu/wp-content/uploads/2011/03/graf-hozam-adat.png;" vertex="1" parent="1">
+          <mxGeometry x="80" y="130" width="465.65" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-8" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="80" y="280" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-9" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="80" y="320" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-10" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="80" y="360" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-11" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="80" y="400" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-12" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="80" y="440" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-13" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="80" y="480" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-14" value="&lt;h2&gt;Befektetés 1&lt;/h2&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#00FF00;" vertex="1" parent="1">
+          <mxGeometry x="120" y="280" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-15" value="&lt;h2&gt;Befektetés 2&lt;/h2&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#999900;" vertex="1" parent="1">
+          <mxGeometry x="120" y="320" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-16" value="&lt;h2&gt;Befektetés 3&lt;/h2&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#CC0000;" vertex="1" parent="1">
+          <mxGeometry x="120" y="360" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-17" value="&lt;h2&gt;Befektetés 6&lt;/h2&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#660033;" vertex="1" parent="1">
+          <mxGeometry x="120" y="480" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-18" value="&lt;h2&gt;Befektetés 5&lt;/h2&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#4C0099;" vertex="1" parent="1">
+          <mxGeometry x="120" y="440" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-19" value="&lt;h2&gt;Befektetés 4&lt;/h2&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#0000CC;" vertex="1" parent="1">
+          <mxGeometry x="120" y="400" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-21" value="&lt;h1&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Végső időpont:&lt;/font&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="322" y="385" width="176" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-22" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="275" width="224" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-23" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="282.5" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-24" value="&lt;h2&gt;2022.01.01.&lt;/h2&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="290" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-25" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.calendar" vertex="1" parent="1">
+          <mxGeometry x="680" y="288.59999999999997" width="40" height="32.8" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-26" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="370" width="224" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-27" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="377.5" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-28" value="&lt;h2&gt;2023.01.01.&lt;/h2&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="385" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-29" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.calendar" vertex="1" parent="1">
+          <mxGeometry x="680" y="383.59999999999997" width="40" height="32.8" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-31" value="" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="414" y="480" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-32" value="&lt;h1&gt;Start gomb&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="404" y="495" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2q9E92bp1PjXqGo0BfMF-33" value="3. oldal" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#3399FF;" vertex="1" parent="1">
+          <mxGeometry x="700" y="570" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

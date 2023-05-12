@@ -1,0 +1,12 @@
+Interaktív megjelenítő eszköz pénzügyi adatok elemzéséhez
+
+A pénzügyi adatok (például tőzsdei árfolyamok) elemzéséhez
+elengedhetetlen, hogy a rendelkezésre álló információk a szakértők
+számára könnyen áttekinthető formában rendelkezésre álljanak. A dolgozat
+célja olyan interaktív, dinamikus megjelenítési módok tervezésének,
+működésének és használatának a bemutatása, amellyekkel egyazon idősor
+különböző részei, különböző forrásból származó idősorok, az azokból
+származtatott értékek összehasonlíthatók, az aggregáláshoz használt
+paraméterek rugalmasan változtathatók. Az alkalmazás elkészítése
+JavaScript nyelven történik, a megjelenítés és az események kezelése
+HTML5 Canvas elemen keresztül kerül megvalósításra.
