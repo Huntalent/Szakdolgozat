@@ -295,7 +295,7 @@ p {
     height: 330px;
     object-fit: cover;
     border-radius: 17px;
-    
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.6);
 }
 
 #invest .inv-onethree{border-radius: 20px; border: 2px solid #465b52;}
@@ -711,10 +711,17 @@ p {
 }
 
 #form-details form button{
-    width: 10%;
+    width: 100px;
     background-color: #088178;
     color: #fff;
     border-radius: 10px;
+    border: 1px solid #088178;
+    margin-bottom: 20px;
+}
+
+#form-details form button:hover{
+    background-color: #066d64;
+    color: #f5f3f3;
 }
 
 #form-details .people div p span{
@@ -858,7 +865,7 @@ p {
     #invest .invest-box{        
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-start;        
     }
 
     #invest .invest-img{
