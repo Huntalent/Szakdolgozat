@@ -4,9 +4,74 @@ A pénzügyi adatok (például tőzsdei árfolyamok) elemzéséhez
 elengedhetetlen, hogy a rendelkezésre álló információk a szakértők
 számára könnyen áttekinthető formában rendelkezésre álljanak. A dolgozat
 célja olyan interaktív, dinamikus megjelenítési módok tervezésének,
-működésének és használatának a bemutatása, amellyekkel egyazon idősor
+működésének és használatának a bemutatása, amelyekkel egyazon idősor
 különböző részei, különböző forrásból származó idősorok, az azokból
 származtatott értékek összehasonlíthatók, az aggregáláshoz használt
 paraméterek rugalmasan változtathatók. Az alkalmazás elkészítése
 JavaScript nyelven történik, a megjelenítés és az események kezelése
 HTML5 Canvas elemen keresztül kerül megvalósításra.
+
+2. Fejezet
+(Irodalom feldolgozás, háttér információk (~ 10%, de elméleti területen írt dolgozatok
+esetében ez akár 30% is lehet)) 
+
+2.1 A grafikonok történelme
+2.2 Tőzsde
+2.3 Részvény/Befektetési alapok
+2.4 Mennyire fontosak az ilyen rendszerek.
+2.5 Más oldalakkal való összehasonlítás
+2.6 Brossúra
+
+3. Fejezet
+(feladat megoldásához rendelkezésre álló technikák, technológiák, fejlesztőeszközök ismertetése, 
+összehasonlítása, (előnyök, hátrányok ütköztetése, felhasználhatóság mérlegelése). (~ 25%) )
+
+3.1 Áttekintés
+3.2 Az alkalmazás specifikációja
+3.3 Miből áll az alkalmazás
+3.4 Az alkalmazás részletes bemutatója
+3.5 Felhasználói kézikönyv/Használati útmutató az alkalmazáshoz
+
+4. Fejezet
+(Saját teljesítmény előállításához ténylegesen felhasznált eszközök részletes ismertetése; a kiválasztás 
+szempontjai, telepítés, használatba vétel előfeltételei és lépései (ha azok nem magától értetődők). (~ 20%) )
+
+
+Bekezdésnek bevezetés
+4.1 Tervezés
+4.2 Kliens program működése
+4.3 Felhasznált Technológiák
+4.4 Chart.JS és más grafikus nyelvek
+4.5 Miért a Chart.JS
+
+5. Fejezet
+(Saját munkánk (alkalmazásfejlesztés, mérés, tervezés stb.) részletes leírása, 
+az eredmények szemléletes ismertetése. (~ 35%))
+
+5.1 Implementáció
+5.2 Fejlesztői környezet
+5.3 Fejlesztés menete
+5.4 Továbbfejlesztési lehetőségek
+
+
+6. Fejezet 
+(Tapasztalatok, eredmények összegzése; a feladat elkészítése során 
+felmerült nehézségek, elkövetett hibák; jövőbeni fejlesztési lehetőségek. (~10%))
+
+6.1 Összegzés
+6.2 Tapasztalatok
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

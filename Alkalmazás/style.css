@@ -652,6 +652,7 @@ p {
     background-size: cover;
     background-position: top 95% right 0;
     margin-bottom: 60px;
+    overflow: hidden;
 }
 
 #contact-details {
