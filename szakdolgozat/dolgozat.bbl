@@ -1,8 +1,29 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{6}
 
-\bibitem{coombs1987markup}
-James~H Coombs, Allen~H Renear, and Steven~J DeRose.
-\newblock Markup systems and the future of scholarly text processing.
-\newblock {\em Communications of the ACM}, 30(11):933--947, 1987.
+\bibitem{portfolio}
+Forrás: \url{https://www.portfolio.hu/prof/20181005/a-grafikon-ami-eleteket-mentett-299542}, \textit{Felhasználtam a történet bevezetését}
 
+\bibitem{wikiMatek}
+Forrás: \url{https://hu.wikipedia.org/wiki/Grafikon_(matematika)}, \textit{Felhasználtam az oldalon található grafikon megfogalmazását}
+
+\bibitem{oldGraph}
+Forrás: \url{https://dataschools.education/history-of-graphs/}.
+
+\bibitem{wikiStock}
+Forrás: \url{https://hu.wikipedia.org/wiki/Tőzsde}, \textit{Felhasználtam az oldalon található tőzsde megfogalmazását}
+
+\bibitem{wikiShare}
+Forrás: \url{https://hu.wikipedia.org/wiki/Részvény}, \textit{Felhasználtam az oldalon található részvény leírását}
+
+\bibitem{wikiInvest}
+Forrás: \url{https://hu.wikipedia.org/wiki/Befektetési_alap}, \textit{Felhasználtam az oldalon található befektetési alap megfogalmazását}
+
+\bibitem{OTPInvest}
+Forrás: \url{https://www.otpbank.hu/otpalapkezelo/hu/Befektetesi_alapok/Tudnivalok}, \textit{Felhasználtam az oldalon található Tudnivalók leírását}
+
+\bibitem{investExample}
+Forrás: \url{http://127.0.0.1:5500/frontend/europe.html}
+
+\bibitem{}
+Forrás: \url{}
 \end{thebibliography}
