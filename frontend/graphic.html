@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Interaktív Tőszde</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clockpicker/0.0.7/bootstrap-clockpicker.css"
+            integrity="sha512-BB0bszal4NXOgRP9MYCyVA0NNK2k1Rhr+8klY17rj4OhwTmqdPUQibKUDeHesYtXl7Ma2+tqC6c7FzYuHhw94g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/clockpicker/0.0.7/bootstrap-clockpicker.min.css"
+            integrity="sha512-MT4B7BDQpIoW1D7HNPZNMhCD2G6CDXia4tjCdgqQLyq2a9uQnLPLgMNbdPY7g6di3hHjAI8NGVqhstenYrzY1Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+
+    <body>
+
+        <section id="header">
+            <a href="#"> <img src="assets/logo.png" class="logo" alt="logo"></a>
+
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html"> Kezdőlap </a></li>
+                    <li><a class="active" href="graphic.html"> Grafikonrajzoló </a></li>
+                    <li><a href="investment.html"> Befektetések </a></li>
+                    <li><a href="contact.html"> Kapcsolat </a></li>
+                    <!-- <li><a href="profile.html"> <i class="fa-solid fa-user"></i> </a></li> -->
+                    <a href="#" id="close"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                </ul>
+            </div>
+
+            <div id="mobile">
+                <i id="bar" class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+
+        </section>
+
+        <main id="main">
+
+            <section class="graph-banner">
+                <div class="row">
+                    <div class="col">
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="graph-desctription">
+                <div>
+                    <div>
+                        <p>A grafikonrajzolóval lehetőség van több Alapnak az árfolyamát és hozamadatát
+                            tetszõleges idõtávon
+                            ábrázolni, összehasonlítani. A kijelölt alapra grafikon jelenik meg, az egyik az Y tengelyen
+                            a szórása található az
+                            árfolyamoknak, az X tengelyen a kezdeti idõponttól a záró időpontig lévő intervallumot
+                            láthatjuk. Ha a
+                            grafikonokra húzzuk az egér mutatóját, akkor részletesen is láthatjuk az adatokat<br>
+                            Az itt látható értékek csak irányadóak, azok tartalma nem reprezentál valós tőszdei
+                            adatokat. Lehetőség van egy árfolyam több pontját is
+                            megviszgálni, illetve különféle grafikonokkal van lehetőség ábrázolni az adatokat. <br>
+                            Hat fajta portfólió all rendelkezésre az elemzéshez, amelyekre kattintva részletese leírást
+                            is találhatunk az oldalon.</p>
+                    </div>
+                    <div>
+                        <h4>Kérjük válasszon!</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section id="graph-plotter-form">
+                <fieldset id="graph-type">
+                    <div class="form-check">
+                        <input class="form-check-input lineout" type="radio" name="type" id="line" value="line" checked>
+                        <label class="form-check-label" for="line">
+                            Vonaldiagram
+                        </label>
+                    </div>
+                    <div class="form-check ">
+                        <input class="form-check-input lineout-2" type="radio" name="type" id="bar" value="bar">
+                        <label class="form-check-label" for="bar">
+                            Oszlopdiagram
+                        </label>
+                    </div>
+                    <div class="form-check ">
+                        <input class="form-check-input lineout-3" type="radio" name="type" id="doughnut"
+                            value="doughnut">
+                        <label class="form-check-label " for="doughnut">
+                            Kördiagram
+                        </label>
+                    </div>
+                    <div class="form-check ">
+                        <input class="form-check-input lineout-4" type="radio" name="type" id="radar" value="radar">
+                        <label class="form-check-label " for="radar">
+                            Radardiagram
+                        </label>
+                    </div>
+                    <div class="form-check ">
+                        <input class="form-check-input lineout-5" type="radio" name="type" id="polarArea"
+                            value="polarArea">
+                        <label class="form-check-label " for="polarArea">
+                            Poláris diagram
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="table" id="graph-invests">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <i class="fa-solid fa-file-powerpoint"></i>
+                                        <h3>Portfóliók</h3>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="invests" value="AAPL"
+                                                id="AAPL" checked>
+                                            <label class="form-check-label" for="AAPL">
+                                                <i class="fa-solid fa-angle-right"></i><a href="andante.html">Alacsony
+                                                    kockázatú
+                                                    befektetések</a>
+                                            </label>
+                                            <span>(USD)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="invests" value="AMZN"
+                                                id="AMZN">
+                                            <label class="form-check-label" for="AMZN">
+                                                <i class="fa-solid fa-angle-right"></i><a href="moderato.html">Közepes
+                                                    kockázatú
+                                                    befektetések</a>
+                                            </label>
+                                            <span>(USD)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="invests" value="GOOGL"
+                                                id="GOOGL">
+                                            <label class="form-check-label" for="GOOGL">
+                                                <i class="fa-solid fa-angle-right"></i><a href="allegro.html">Magas
+                                                    kockázatú befektetések
+                                                </a>
+                                            </label>
+                                            <span>(USD)</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="invests" value="META"
+                                                id="META">
+                                            <label class="form-check-label" for="META">
+                                                <i class="fa-solid fa-angle-right"></i><a href="family.html">Családi
+                                                    csomag
+                                                </a>
+                                            </label>
+                                            <span>(USD)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="invests" value="MSFT"
+                                                id="MSFT">
+                                            <label class="form-check-label" for="MSFT">
+                                                <i class="fa-solid fa-angle-right"></i><a href="europe.html">Európai
+                                                    portfólió</a>
+                                            </label>
+                                            <span>(USD)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="invests" value="TSLA"
+                                                id="TSLA">
+                                            <label class="form-check-label" for="TSLA">
+                                                <i class="fa-solid fa-angle-right"></i><a href="renew.html">Megújuló
+                                                    energia</a>
+                                            </label>
+                                            <span>(USD)</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </fieldset>
+
+                <fieldset id="graph-value">
+                    <div class="value-header">
+                        <i class="fa-solid fa-money-bill-trend-up"></i>
+                        <h3>Tőzsdei árfolyamok</h3>
+                    </div>
+                    <div class="graph-value">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="values" id="open" value="open" checked>
+                            <label class="form-check-label" for="open">
+                                Nyító árfolyam
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="values" id="high" value="high">
+                            <label class="form-check-label" for="high">
+                                Napi maximum
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="values" id="low" value="low">
+                            <label class="form-check-label" for="low">
+                                Napi minimum
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="values" value="close">
+                            <label class="form-check-label" for="close">
+                                Napi záró
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="values" id="adjusted_close"
+                                value="adjusted_close">
+                            <label class="form-check-label" for="adjusted_close">
+                                Napi átlag
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+
+                <fieldset>
+                    <div class="container">
+                        <div class="row">
+                            <label for="date" class="col form-label"></label>
+                            <div class="input-group date" id="min-datepicker">
+                                <input type="text" class="form-control" id="min-date" placeholder="Kezdeti dátum"
+                                    required />
+                                <span class="input-group-append">
+                                    <span class="input-group-text bg-light d-block">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </span>
+                            </div>
+
+                            <label for="date" class="col form-label"></label>
+                            <div class="input-group date" id="max-datepicker">
+                                <input type="text" class="form-control" id="max-date" placeholder="Záró dátum"
+                                    required />
+                                <span class="input-group-append">
+                                    <span class="input-group-text bg-light d-block">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="inline-error"></div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="container" id="graph-btn">
+                        <div class="row">
+                            <div class="col btn-design">
+                                <input type="submit" id="btn" class="btn btn-primary .hover-2" value="Mehet >>">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </section>
+
+            <section id="graph">
+                <div>
+                    <div id="graphTime"></div>
+                    <canvas id="myChart"></canvas>
+                </div>
+            </section>
+
+            <footer id="footer">
+                <div class="row">
+                    <div class="col">
+                        <img class="logo" src="assets/logo.png" alt="">
+                        <h4><strong>Elérhetőségeink</strong></h4>
+                        <p> <strong>Cím:</strong> 3515, Miskolc, Miskolci Egyetem</p>
+                        <p> <strong>Telefonszám:</strong> +36 70 378 4880</p>
+                        <p> <strong>Nyitva tartás:</strong> 08:00 - 18:00 | Hétfő - Szombat</p>
+
+                        <div class="follow">
+                            <h4><strong>Kövess minket</strong></h4>
+                            <div class="icon">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-pinterest-p"></i>
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col about">
+                        <h4><strong>Rólunk</strong></h4>
+                        <ul>
+                            <li>
+                                <a href="contact.html">Kapcsolat</a>
+                            </li>
+                            <li>
+                                <a href="#">Belépés</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Keress meg minket</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col install">
+                        <h4><strong>Töltse le le az applikációnkat</strong></h4>
+                        <p>Az App Store vagy Google Play kínálatából</p>
+
+                        <div class="row">
+                            <img src="assets/footer/app.jpg" alt="">
+                            <img src="assets/footer/play.jpg" alt="">
+                        </div>
+
+                        <p>Biztonságos fizetési opciók</p>
+                        <img src="assets/footer/pay.png" alt="">
+                    </div>
+
+                    <div class="copyright">
+                        <p>© Bencze Zsombor - LP5J4B Szakdolgozat II, Miskolc 2023</p>
+                    </div>
+                </div>
+            </footer>
+
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/clockpicker/0.0.7/jquery-clockpicker.min.js"
+                integrity="sha512-x0qixPCOQbS3xAQw8BL9qjhAh185N7JSw39hzE/ff71BXg7P1fkynTqcLYMlNmwRDtgdoYgURIvos+NJ6g0rNg=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/clockpicker/0.0.7/bootstrap-clockpicker.js"
+                integrity="sha512-1QoWYDbO//G0JPa2VnQ3WrXtcgOGGCtdpt5y9riMW4NCCRBKQ4bs/XSKJAUSLIIcHmvUdKCXmQGxh37CQ8rtZQ=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="https://kit.fontawesome.com/7d9365bf1d.js" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            <script src="script.js"></script>
+    </body>
+
+</html>
