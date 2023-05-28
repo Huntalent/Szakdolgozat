@@ -169,7 +169,7 @@ function addGraphTime() {
   }
 }
 
-function deleteGraphTime(){
+function removeGraphTime(){
   graphTime.textContent = "";
 }
 //Nem lehet dátum nélkül grafikont megjeleníteni
@@ -246,7 +246,7 @@ btn.addEventListener("click", async () =>  {
 
     makeNewChart()
 
-    deleteGraphTime()
+    removeGraphTime()
 
   } else{
     const url = `http://localhost:8080/api?ticker=${selectedInvest}&&start_date=${startDateGraph}&end_date=${endDateGraph}`;
@@ -285,6 +285,7 @@ btn.addEventListener("click", async () =>  {
       })
   }  
 });
+
 async function fetchStockValues(url){
   return fetch(url)
    .then(response => {

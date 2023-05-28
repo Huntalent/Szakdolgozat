@@ -1,13 +1,16 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{13}
 
 \bibitem{portfolio}
-Forrás: \url{https://www.portfolio.hu/prof/20181005/a-grafikon-ami-eleteket-mentett-299542}, \textit{Felhasználtam a történet bevezetését}
+Forrás:\url{https://www.portfolio.hu/prof/20181005/a-grafikon-ami-eleteket-mentett-299542}, \textit{Felhasználtam a történet bevezetését}
 
 \bibitem{wikiMatek}
 Forrás: \url{https://hu.wikipedia.org/wiki/Grafikon_(matematika)}, \textit{Felhasználtam az oldalon található grafikon megfogalmazását}
 
 \bibitem{oldGraph}
-Forrás: \url{https://dataschools.education/history-of-graphs/}.
+Forrás: \url{https://dataschools.education/history-of-graphs/}
+
+\bibitem{graphTypes}
+Forrás: \url{https://www.uni-miskolc.hu/~wwwfemsz/exc5.htm}, \textit{Felhasználtam Dr. Szabó László: Segédlet az Excel 5.0 használatához leírását a grafikon típusokhoz}
 
 \bibitem{wikiStock}
 Forrás: \url{https://hu.wikipedia.org/wiki/Tőzsde}, \textit{Felhasználtam az oldalon található tőzsde megfogalmazását}
@@ -19,11 +22,32 @@ Forrás: \url{https://hu.wikipedia.org/wiki/Részvény}, \textit{Felhasználtam 
 Forrás: \url{https://hu.wikipedia.org/wiki/Befektetési_alap}, \textit{Felhasználtam az oldalon található befektetési alap megfogalmazását}
 
 \bibitem{OTPInvest}
-Forrás: \url{https://www.otpbank.hu/otpalapkezelo/hu/Befektetesi_alapok/Tudnivalok}, \textit{Felhasználtam az oldalon található Tudnivalók leírását}
+Forrás: \url{https://www.otpbank.hu/otpalapkezelo/hu/Befektetesi_alapok/Tudnivalok}, 
 
-\bibitem{investExample}
-Forrás: \url{http://127.0.0.1:5500/frontend/europe.html}
+\bibitem{exchangeRate}
+Forrás: \url{https://docplayer.hu/7069114-Arfolyamok-miskolci-egyetem-mesterkepzes.html}, \textit{Felhasználtam az PDF-ben lévő árfolyamok leírását}
 
-\bibitem{}
-Forrás: \url{}
+\bibitem{agile}
+Forrás: \url{https://promanconsulting.hu/mi-az-agilis-modszertan-legelterjedtebb-agilis-modszertanok/}, \textit{Felhasználtam az  oldalon található Extreme Programming leírását}
+
+\bibitem{cssTypes}
+Forrás: \url{https://www.bitdegree.org/learn/inline-css}, \textit{Felhasználtam az  oldalon található CSS elérési útvonalakat}
+
+\bibitem{gridSystem}
+Forrás: \url{https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp}, \textit{Felhasználtam az  oldalon található képet}
+
+\bibitem{nodeJS}
+Forrás: \url{https://nodejs.org/en/about}, \textit{Felhasználtam az  oldalon található Node.js  leírását}
+
+\bibitem{wikiJS}
+Forrás: \url{https://en.wikipedia.org/wiki/JavaScript}, \textit{Felhasználtam az  oldalon található JavaScript, JQuery és JSON leírásokat}
+
+\bibitem{ChartJS}
+Forrás: \url{https://www.chartjs.org/docs/latest/}, \textit{Felhasználtam az  oldalon található leírásokat}
+
+\bibitem{wikiChart}
+Forrás: \url{https://en.wikipedia.org/wiki/Chart.js}, \textit{Felhasználtam az  oldalon található adatokat}
+
 \end{thebibliography}
+
+
