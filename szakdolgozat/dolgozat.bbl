@@ -1,64 +1,62 @@
 \begin{thebibliography}{13}
 
 \bibitem{portfolio}
-Forrás:\url{https://www.portfolio.hu/prof/20181005/a-grafikon-ami-eleteket-mentett-299542}, \textit{Felhasználtam a történet bevezetését}
+Forrás:\url{https://www.portfolio.hu/prof/20181005/a-grafikon-ami-eleteket-mentett-299542}, \textit{Felhasználtam a történet bevezetését, szerző: András Bence
+2018. október 05.}
 
 \bibitem{wikiMatek}
-Forrás: \url{https://hu.wikipedia.org/wiki/Grafikon_(matematika)}, \textit{Felhasználtam az oldalon található grafikon megfogalmazását}
+Forrás: \url{https://admiralmarkets.com/hu/education/articles/forex-basics/tozsde-grafikonok}
 
 \bibitem{oldGraph}
 Forrás: \url{https://dataschools.education/history-of-graphs/}
 
 \bibitem{graphTypes}
-Forrás: \url{https://www.uni-miskolc.hu/~wwwfemsz/exc5.htm}, \textit{Felhasználtam Dr. Szabó László: Segédlet az Excel 5.0 használatához leírását a grafikon típusokhoz}
+Forrás: \url{https://www.uni-miskolc.hu/~wwwfemsz/exc5.htm}, \textit{Segédlet az Excel 5.0 használatához előadásban található grafikon típusokat használtam. Dr. Szabó László: Segédlet az Ecxel 5.0 használatához Miskolc, 1997 © Szabó László}
 
 \bibitem{wikiStock}
-Forrás: \url{https://hu.wikipedia.org/wiki/Tőzsde}, \textit{Felhasználtam az oldalon található tőzsde megfogalmazását}
+Forrás: \url{https://www.mnb.hu/letoltes/tozsdei-alapok.pdf}, \textit{Forrásomul szolgált az MNB által leírtak. Magyar Nemzeti Bank Tőzsdei-alapok.pdf 2020 február}
 
 \bibitem{wikiShare}
-Forrás: \url{https://hu.wikipedia.org/wiki/Részvény}, \textit{Felhasználtam az oldalon található részvény leírását}
-
-\bibitem{wikiInvest}
-Forrás: \url{https://hu.wikipedia.org/wiki/Befektetési_alap}, \textit{Felhasználtam az oldalon található befektetési alap megfogalmazását}
+Forrás: \url{https://hold.hu/lexikon/reszveny-fogalma/}
 
 \bibitem{OTPInvest}
-Forrás: \url{https://www.otpbank.hu/otpalapkezelo/hu/Befektetesi_alapok/Tudnivalok}, 
+Forrás: \url{https://www.otpbank.hu/otpalapkezelo/hu/Befektetesi_alapok/Tudnivalok}, \textit{OTP Alapkezelő}
 
 \bibitem{exchangeRate}
-Forrás: \url{https://docplayer.hu/7069114-Arfolyamok-miskolci-egyetem-mesterkepzes.html}, \textit{Felhasználtam az PDF-ben lévő árfolyamok leírását}
+Forrás: \url{https://docplayer.hu/7069114-Arfolyamok-miskolci-egyetem-mesterkepzes.html}, \textit{Tóthné Klára Miskolci Egyetem, 2016}
 
 \bibitem{agile}
-Forrás: \url{https://promanconsulting.hu/mi-az-agilis-modszertan-legelterjedtebb-agilis-modszertanok/}, \textit{Felhasználtam az  oldalon található Extreme Programming leírását}
+Forrás: \url{https://promanconsulting.hu/mi-az-agilis-modszertan-legelterjedtebb-agilis-modszertanok/}, \textit{Az oldalon található Extreme Programming leírásából informálódtam}
 
 \bibitem{cssTypes}
-Forrás: \url{https://www.bitdegree.org/learn/inline-css}, \textit{Felhasználtam az  oldalon található CSS elérési útvonalakat}
+Forrás: \url{https://www.bitdegree.org/learn/inline-css}
 
 \bibitem{Bootstrap}
-Forrás: \url{https://getbootstrap.com/docs/5.3/getting-started/introduction/}, \textit{Felhasználtam az  oldalon található leírást}
+Forrás: \url{https://getbootstrap.com/docs/5.3/getting-started/introduction/}
 
 \bibitem{gridSystem}
 Forrás: \url{https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp}, \textit{Felhasználtam az  oldalon található képet}
 
 \bibitem{nodeJS}
-Forrás: \url{https://nodejs.org/en/about}, \textit{Felhasználtam az  oldalon található Node.js  leírását}
+Forrás: \url{https://nodejs.org/en/about}
 
 \bibitem{wikiJS}
 Forrás: \url{https://en.wikipedia.org/wiki/JavaScript}, \textit{Felhasználtam az  oldalon található JavaScript, JQuery és JSON leírásokat}
 
 \bibitem{ChartJS}
-Forrás: \url{https://www.chartjs.org/docs/latest/}, \textit{Felhasználtam az  oldalon található leírásokat}
+Forrás: \url{https://www.chartjs.org/docs/latest/}
 
 \bibitem{wikiChart}
-Forrás: \url{https://en.wikipedia.org/wiki/Chart.js}, \textit{Felhasználtam az  oldalon található adatokat}
+Forrás: \url{https://en.wikipedia.org/wiki/Chart.js}, \textit{Felhasználtam az  oldalon található összehasonlítást}
 
 \bibitem{eod}
-Forrás: \url{https://eodhistoricaldata.com/financial-apis/stock-etfs-fundamental-data-feeds/}, \textit{Felhasználtam az  oldalon található ismertető bejegyzést}
+Forrás: \url{https://eodhistoricaldata.com/financial-apis/stock-etfs-fundamental-data-feeds/}, \textit{Tőzsdei adatok API hívásokkal történő lekéréséhez szolgált célul az oldal}
 
 \bibitem{vsc}
-Forrás: \url{https://code.visualstudio.com/learn}, \textit{Felhasználtam az  oldalon található Áttekintés fejezet tartalmát}
+Forrás: \url{https://code.visualstudio.com/learn}
 
 \bibitem{git}
-Forrás: \url{https://www.simplilearn.com/tutorials/git-tutorial/what-is-git#what_is_git}, \textit{Felhasználtam az  oldalon található leírást és jellemzést}
+Forrás: \url{https://www.simplilearn.com/tutorials/git-tutorial/what-is-git#what_is_git},  \textit{Haifa Perveez munkássága}
 
 \bibitem{nodeServer}
 Forrás: \url{https://www.w3schools.com/nodejs/nodejs_http.asp}, \textit{Az itt látható kódrészlettel hoztam létre a szervert}
@@ -67,7 +65,7 @@ Forrás: \url{https://www.w3schools.com/nodejs/nodejs_http.asp}, \textit{Az itt 
 Forrás: \url{https://app.diagrams.net/}, \textit{Draw.io oldalon készítettem el a folyamatábrát}
 
 \bibitem{Aegon}
-Forrás: \url{https://www.vigam.hu/}, \textit{Az oldal hatalmas inspirációt jelentettem a weboldalam struktúrájában}
+Forrás: \url{https://www.vigam.hu/}, \textit{Az oldal hatalmas inspirációt jelentettem a weboldalam struktúrájában. Aegon Alapkezelő}
 
 \bibitem{contact}
 Forrás: \url{https://www.honlapdiszkont.com/milyen-a-jol-konvertalo-kezdolap/}, \textit{Felhasználtam az oldalon található leírásokat és tippeket}
