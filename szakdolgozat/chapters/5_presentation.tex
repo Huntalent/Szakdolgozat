@@ -1,8 +1,8 @@
-\Chapter{Alkalmazás Bemutatása}
+\Chapter{Alkalmazás bemutatása}
 
 \section{Alkalmazás felépítése}
 
-Az alkalmazást úgy építettem fel, hogy a látogató elsőként a Kezdőlapon találja magát. Innen lehetősége van a további három másik főoldal bármelyikére kalauzolnia magát, ha szeretné. A weboldal fő eleme a Grafikonrajzoló oldal, viszont az oda vezető út nem biztos, hogy teljesen egyenes. Több dologgal is keresztezheti a böngészést, például:
+Az alkalmazást úgy építettem fel, hogy a látogató elsőként a Kezdőlapon találja magát. Innen lehetősége van a további három másik főoldal bármelyikére kalauzolnia magát, amennyiben szeretné. A weboldal fő eleme a Grafikonrajzoló oldal, viszont az oda vezető út nem biztos, hogy teljesen egyenes. Több dologgal is keresztezheti a böngészést, például:
 
 \begin{verbatim}
 - Meglátja az "Ajánlataink" részt, ami felkelti az érdeklődését,ezáltal 
@@ -20,7 +20,7 @@ Az alkalmazást úgy építettem fel, hogy a látogató elsőként a Kezdőlapon
 
 \section{Alkalmazás panelei}
 
-Az alkalmazás megalkotásánál az alapvető tézisem az volt, hogy tudásom legjavát  megjelenítés és funkcionalitással szeretném kifejezni. Piackutatásaim során sokat ihletődtem különböző grafikonrajzoló weboldalakról, főként abból a szempontból, hogy milyen paneleket és oldalakat érdemes megalkotni. Következésképpen a szoftver struktúráját négy fő oldalra és hat aloldalra terveztem meg.\cite{Aegon} A főbb oladalak a következőek: 
+Az alkalmazás megalkotásánál az alapvető tézisem az volt, hogy tudásom legjavát  megjelenítéssel és funkcionalitással szeretném kifejezni. Piackutatásaim során sokat ihletődtem különböző grafikonrajzoló weboldalakról, főként abból a szempontból, hogy milyen paneleket és oldalakat érdemes megalkotni. Következésképpen a szoftver struktúráját négy fő oldalra és hat aloldalra terveztem meg.\cite{Aegon} A főbb oldalak a következőek: 
 
 \begin{itemize}
 \item \textbf{Kezdőlap}
@@ -45,13 +45,13 @@ Minden oldalnak szüksége van egy főoldalra, nálam ezt a szerepet a Kezdőold
 
 Ugyan a \textbf{Kezdőlap} hivatalosan a főoldal amivel elsőnek találkozik a látogató, mégis a szakdolgozatom fő eleme a Grafikonrajzoló oldal. A teljes projekt eköré a lehetőség köré épült, mivel a tőzsdei adatok sokasága emberi szemnek nem túl kedvező és átlátható, innen jött az ötlet, hogy az adatok perspektivikus ábrázolása sokkal jobban megfogja a célközönséget. Alapvetően a legtöbb ember vizuális beállítottságú és ezt a pszichológia tényt használtam fel a grafikonrajzoló megtervezésénél.
 
-	Megvalósítását tekintve a borítókép is egyértelműen jelzi, hogy az oldalon gráfokkal lehet találkozni. Ezek után egy kisebb bevezető szöveg következik, ami ismertetei hogyan lehet akkurátusan leolvasni a megjelenített adatokat. Természetesen a megjelenítés felépítése nem tér el az átlagtól, így akinek ez lenne a legelső ilyen témájú weboldal, sem fogja magát elveszve érezni, hiszen a tankönyvek, hirdetések és a közmédia is ezen ábrázolást használja, amely információhalmazzal nagy valószínűséggel találkozott a felhasználó élete során. Ha mégsem így lenne, akkor eljött a megfelelő alkalom az alkalmazásom személyében.
+	Megvalósítását tekintve a borítókép is egyértelműen jelzi, hogy az oldalon gráfokkal lehet találkozni. Ezek után egy kisebb bevezető szöveg következik, ami ismerteti hogyan lehet akkurátusan leolvasni a megjelenített adatokat. Természetesen a megjelenítés felépítése nem tér el az átlagtól, így akinek ez lenne a legelső ilyen témájú weboldal, sem fogja magát elveszve érezni, hiszen a tankönyvek, hirdetések és a közmédia is ezen ábrázolást használja, amely információhalmazzal nagy valószínűséggel találkozott a felhasználó élete során. Ha mégsem így lenne, akkor eljött a megfelelő alkalom az alkalmazásom személyében.
 
 	Funkcionalitása úgy épül fel, hogy elsőnek lehetőségünk van kiválasztani milyen fajta gráfot szeretnénk látni. Ötféle opció áll rendelkezésre amelyeket már korábban ismertettem a második fejezet \textbf{Grafikonok története és típusai} részben. Mivel a vonaldiagram a legelterjedtebb gráf, így alapértelmezetten az került kiválasztásra, ha a felhasználó nem változtat az opción, akkor aképpen jelenik meg a gráf. 
 
 Következő adatsor a befektetési alapok. Jelenleg hat különböző típusú befektetési alap közül lehet választani, amiket a \emph{Befektetések} alfejezetben fogok ismertetni. Hogy ne legyen túl sok adat egyszerre megjelenítve korlátoztam a választási lehetőségeket, miszerint egyszerre csak egyféle alapot lehet választani. 
 
-Végül a tőzsdei árfolyamok következnek amiket szintén ismertettem a második fejezet  \textbf{Tőzsdei árfolyami} cikkében. Szintén ötféle választási lehetőség tárul a felhasználó elé, amelyek közül az egyszerű átlátás végett egyet lehet választani
+Végül a tőzsdei árfolyamok következnek amiket szintén ismertettem a második fejezet  \textbf{Tőzsdei árfolyami} cikkében. Szintén ötféle választási lehetőség tárul a felhasználó elé, amelyek közül az egyszerű átlátás végett egyet lehet választani.
 
 \begin{figure}[h]
 \centering
@@ -61,7 +61,7 @@ Végül a tőzsdei árfolyamok következnek amiket szintén ismertettem a másod
 
 \subsection{Befektetések}
 
-A Befektetések oldalnak a fő paradigmája az információ közlés és ismertetése. Az \textbf{Az Elméleti háttér} fejezetben már taglaltam, hogy a tőzsde és a befektetések elrettentő szavak azon személyeknek akiknek nincs átfogó gazdasági tudások, így ez az oldal azt a célt szolgálja, hogy bárki tudását gyarapíthassa. Jelenleg az oldalamon hat különböző befektetés elérhető, mindegyik befektetéshez külön aloldal tartozik, ahol részletes leírás, táblázat és éves nettó értékelés is található. Felépítését tekintve, hogy jobban meglehessen őket jegyezni mindegyik befektetés kapott saját borítóképet és fantázia nevet. A befektetések leírása általam készített kreáció amiket a fő inspirációként szolgáló \textbf{Aegon Biztosító Zrt.} hivatalos weboldaláról szereztem \cite{Aegon}. Mindegyik befektetés adathalmaza valós részvények adatait képezik, mint például a \emph{Tempó 2 Andante} alaphoz a Google részvényein alapszik. Ezen adatokat a már korábban említett EOD oldalról gyűjtöttem össze API hívásokat alkalmazva. \cite{eod} 
+A Befektetések oldalnak a fő paradigmája az információ közlése és ismertetése. Az \textbf{Az Elméleti háttér} fejezetben már taglaltam, hogy a tőzsde és a befektetések elrettentő szavak azon személyeknek akiknek nincs átfogó gazdasági szakértelme, így ez az oldal azt a célt szolgálja, hogy bárki tudását gyarapíthassa. Jelenleg az oldalamon hat különböző befektetés elérhető, mindegyik befektetéshez külön aloldal tartozik, ahol részletes leírás, táblázat és éves nettó értékelés is található. Felépítését tekintve, hogy jobban meglehessen őket jegyezni mindegyik befektetés kapott saját borítóképet és fantázia nevet. A befektetések leírása általam készített kreáció amiket a fő inspirációként szolgáló \textbf{Aegon Biztosító Zrt.} hivatalos weboldaláról szereztem \cite{Aegon}. Mindegyik befektetés adathalmaza valós részvények adatait képezik, mint például a \emph{Tempó 2 Andante} alaphoz a Google részvényein alapszik. Ezen adatokat a már korábban említett EOD oldalról gyűjtöttem össze API hívásokat alkalmazva. \cite{eod} 
 A Befektetések oldalon található hat befektetési alap:
 \begin{itemize}
 \item \textbf{Tempó 2 Andante (Alacsony kockázatú befektetés)}
@@ -127,34 +127,34 @@ A logó az alkalmazás bal oldalán helyezkedik el, mind a navigációs sávon, 
 
 \subsection{Más oldalakkal összehasonlítás}
 
-Ebben a szekvenciában szubjektív módon szeretném bemutatni, mi indokolta a weboldalam létrejöttét. Olyan szempontokat fogok felsorolni amiket az én alkalmazásomban megtalálhatóak, de más általam felmért weboldalakban hiányoltam. Ahogy már említettem a lista teljesen szubjektív és az oldalon található funkciókat szeretném megindokolni, hogy miért lettek lefeljlesztve és mi volt velük a célom. \\
+Ebben a szekvenciában szubjektív módon szeretném bemutatni, mi indokolta a weboldalam létrejöttét. Olyan szempontokat fogok felsorolni amik az én alkalmazásomban megtalálhatóak, de más általam felmért weboldalakban hiányoltam. Ahogy már említettem a lista teljesen szubjektív és az oldalon található funkciókat szeretném megindokolni, hogy miért lettek lefejlesztve és mi volt velük a célom. \\
 
 \textbf{Ami az én oldalalom megtalálható és más oldalon nem}:
 
 \begin{itemize}
 \item Könnyű navigálás, hiszen a főoldalról is elérhető bármelyik oldal, illetve a navigációs sáv követi a képernyő mozgását. 
-\item Képpekkel ellátott befektetések, hogy befogadhatóbbak legyenek
-\item Többfajta diagram típus közül lehet választani
-\item Többféle árfolyam is választható
+\item Képpekkel ellátott befektetések, hogy befogadhatóbbak legyenek.
+\item Többfajta diagram típus közül lehet választani.
+\item Többféle árfolyam is választható.
 \end{itemize}
 
 \textbf{Ami az én oldalalom nem találjató meg, de más oldalon igen}:
 
 \begin{itemize}
-\item Vonaldiagramnál több gráf választható
-\item Bejelentkezési felület
-\item Nyelvesítés
-\item Adatok letöltése
+\item Vonaldiagramnál több gráf választható.
+\item Bejelentkezési felület.
+\item Nyelvesítés.
+\item Adatok letöltése.
 \end{itemize}
 
 \subsection {Miért fontosak a tőzsdei adatokat megjelenítő weboldalak?}
 
-A tőzsdére történő befektetés jövedelmező vállalkozás lehet, de alapos kutatást és elemzést igényel a megalapozott döntések meghozatalához. Az egyik értékes erőforrás, amely jelentősen segítheti a befektetőket a döntéshozatali folyamatban, a grafikonrajzoló weboldalak. Átfogó adatvizsgálat, pénzügyi kimutatásokhoz és iparági betekintésekhez szokás használni. A tőzsde rendkívül dinamikus, az árfolyamok különböző tényezők miatt gyorsan ingadoznak. A grafikonrajzolók segítségével folyamatosan figyelemmel kísérhetőek a piaci viszonyok, és azonnali betekintést 
+A tőzsdére történő befektetés jövedelmező vállalkozás lehet, de alapos kutatást és elemzést igényel a megalapozott döntések meghozatalához. Az egyik értékes erőforrás, amely jelentősen segítheti a befektetőket a döntéshozatali folyamatban, a grafikonrajzoló weboldalak. Átfogó adatvizsgálat, pénzügyi kimutatásokhoz és iparági betekintésekhez szokás használni. A tőzsde rendkívül dinamikus, az árfolyamok különböző tényezők miatt gyorsan ingadoznak. A grafikonrajzolók segítségével folyamatosan figyelemmel kísérhetőek a piaci viszonyok, és azonnali betekintés nyerhető.
 A technológiai fejlődésnek és a különféle platformok elérhetőségének köszönhetően minden eddiginél egyszerűbb megtalálni a releváns befektetéseket.
 
 \subsection{Hogyan lehet felhasználni adatok elemzéséhez?}
 
-A grafikon gyakori módszer az adatok összefüggéseinek vizuális szemléltetésére. A grafikon célja, hogy olyan adatokat mutasson be, amelyek túl sok vagy bonyolultak ahhoz, hogy a szövegben és kisebb helyen megfelelően leírhatók legyenek. Ha az adatok kifejezett trendeket mutatnak, vagy a változók közötti kapcsolatokat tárják fel, grafikont kell használni. 
+A grafikon gyakori módszer az adatok összefüggéseinek vizuális szemléltetésére. A grafikon célja, hogy olyan adatokat mutasson be, amelyek túl sok vagy bonyolult ahhoz, hogy a szövegben és kisebb helyen megfelelően leírhatók legyenek. Ha az adatok kifejezett trendeket mutatnak, vagy a változók közötti kapcsolatokat tárják fel, grafikont kell használni. 
 A gráfokon használt egyik gyakori elemzési technika a \textbf{részvényelemzés}.
 
 \subsection{Részvényelemzés}

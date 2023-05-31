@@ -5,25 +5,25 @@ A specifikáció alapján a felhasználó naprakész háttérinformációval ren
 
 \section{Áttekintés}
 
-A szakdolgozatom témája interaktív megjelenítő eszköz (ez esetben weboldal) pénzügyi adatok elemzéséhez. Ilyen szoftverekből különféle megvalósítást lehet találni az interneten, amelyeket nagyobb befektetői hátérrel rendelkező cégek működtetnek általában valamilyen pénzbeli szolgáltatás ellenében. Számomra elsődleges szempontot képviselt a szabad és pénzmentes felhasználás, a könnyű kezelhetőség, átláthatóság és sokszínűség, különösképpen a grafikont illetően. A már bemutatott Chart.js technológia nagyszabásű könyvtárának ismeretével megalkotott gráfok több lehetőséget is a felhasználó elé tárnak, mind megjelenés, mind adathalmazok terén. 
+A szakdolgozatom témája interaktív megjelenítő eszköz (ez esetben weboldal) pénzügyi adatok elemzéséhez. Ilyen szoftverekből különféle megvalósítást lehet találni az interneten, amelyeket nagyobb befektetői háttérrel rendelkező cégek működtetnek általában valamilyen pénzbeli szolgáltatás ellenében. Számomra elsődleges szempontot képviselt a szabad és pénzmentes felhasználás, a könnyű kezelhetőség, átláthatóság és sokszínűség, különösképpen a grafikont illetően. A már bemutatott Chart.js technológia nagyszabású könyvtárának ismeretével megalkotott gráfok több lehetőséget is a felhasználó elé tárnak, mind megjelenés, mind adathalmazok terén. 
 
 \subsection{Problémakör}
 
 Ahogy az Áttekintésben felvázoltam több grafikonrajzoló és eszközkezelő weboldal létezik napjainkban. Ezen oldalakat vizsgálva feltűnt, hogy több megkötés árán tudtam hozzájutni a kívánt adatokhoz. Az egyik ilyen megkötéssel akkor szembesültem, amikor a grafikonrajzolóhoz nem engedett hozzáférni felhasználó nélkül. Mivel teljes mértékben piackutatás céljából vizsgálódtam nem tartottam fontos szempontnak felhasználó regisztrálását, így az oldal használatát a továbbiakban nem tudtam folytatni.
 
-	Következő korlátozás amivel találkoztam, hogy ugyan a biztosítók által használt webhelyek részvények és portfóliók széles körű tárházával rendelkeznek, de jogi és piaci okokból kifolyólag korlátozott az adatbázisuk, hiszen más vállalatok termékeit nem híresztelhetik. Kutatásaim során meggyőződtem, hogy ezen adatok nyilvánosak az ügyfelek számára, tehát illusztrálásuk engedélyezett bármely kliens részére.
+	Következő korlátozás amivel találkoztam, mely szerint a biztosítási cégek által használt webhelyek részvények és portfóliók széles körű tárházával rendelkeznek, de jogi és piaci okokból kifolyólag korlátozott az adatbázisuk, hiszen más vállalatok termékeit nem híresztelhetik. Kutatásaim során meggyőződtem, hogy ezen adatok nyilvánosak az ügyfelek számára, tehát illusztrálásuk engedélyezett bármely kliens részére.
 
 	Továbbiakban széles körű adatforrással rendelkező portálokat után keresgéltem és sikeresen találtam pár ilyen paraméterekkel rendelkező weboldalakat. Azonban túlnyomórészt idegen nyelven íródtak, ami globális szinten érthető megközelítés, viszont mint magyar anyanyelvű felhasználó ezt problémának éreztem. 
 
 \subsection{Program működésének elve}
 
-Pár szóban kifejtem az alkalmazás milyen felhasználói körnek hoztam létre első sorban. Alapvetően adatbányász, tőzsdei jelenléttel rendelkező vállalatoknak ajánlanám, hiszen korlátozás nélkül bővíthető az adathalmaz, ezáltal optimalizálható bármely piaci részre. Felépítésében fontos kulcsszerepet képviseltek az alábbi szempontok:
+Ebben az alfejezetben pár szóval ismertetem, hogy az alkalmazást milyen felhasználói körnek hoztam létre első sorban. Alapvetően adatbányász, tőzsdei jelenléttel rendelkező vállalatoknak ajánlanám, hiszen korlátozás nélkül bővíthető az adathalmaz, ezáltal optimalizálható bármely piaci részre. Struktúrájában fontos kulcsszerepet képviseltek az alábbi szempontok:
 
 \begin{itemize}
 \item \textbf{Megjelenés}: Felépítése, megjelenése letisztult és modern, jelképezve egy innovatív oldal behatását.
 \item \textbf{Reszponzivitás}: Weboldalam célja, hogy optimális megjelenést biztosítson \\
-(könnyű olvashatóság, egyszerű navigáció) a legkülönfélébb eszközökön az asztali számítógépektől egészen a mobiltelefonokig. Az oldal tökéletesen igazodik a megjelenítő eszközhöz a rugalmas felépítésével és flexibilis képeivel.
-\item \textbf{Egységes színvilág}: Színvilág megvalósításánál elengedhetetlen tényező volt, hogy a felhasználónak kellemes színeket használjak, amelyek harmonizálnak egymással. Szubjektív kikötésem volt a fehér háttérszín elvetése, mert számomra szemvakító.
+(könnyű olvashatóság, egyszerű navigáció) a legkülönfélébb eszközökön át az asztali számítógépektől egészen a mobiltelefonokig. Az oldal tökéletesen igazodik a megjelenítő eszközhöz a rugalmas felépítésével és flexibilis képeivel.
+\item \textbf{Egységes színvilág}: A színvilág megvalósításánál elengedhetetlen tényező volt, hogy a felhasználónak kellemes színeket használjak, amelyek harmonizálnak egymással. Szubjektív kikötésem volt a fehér háttérszín elvetése, mert számomra szemvakító.
 \item \textbf{Egységes formavilág}: Az egész weboldalnak egységes a formavilága, könnyen felismerhető panelekkel felépítve. A gombok, képek és szöveg megjelenése nem tér el panelenként szemben sok más alkalmazással.
 \item \textbf{Navigálhatóság}: A weblap összes panele könnyen elérhető akár a navigációs sáv használatával, akár az oldalak közti kommunikációval.
 \item \textbf{Funkciók}: Implementált funkciók szerepüket működésük szerint betöltik, bármely böngészőn futtatjuk az alkalmazást.
@@ -44,11 +44,11 @@ A részvények adatainak az igénybe vételét külsős oldal segítségével ol
 \end{figure}
 
 \pagebreak
-	Elérhető fizetős és ingyenes változata is, én az utóbbit használom, amivel némi megkötéssel kellett szembesülnöm, mint például a maximum időintervallum amira az API-hívások szólhatnak az 1 év, tehát a grafikon ábrázolásának van határa. Illetve naponta csak 20 hívást tudok intézni, így egy erre a problémára egy megoldással kellett előállnom, amit a \aref{fig:server} \textbf{Szerver} szekcióban fogok ismertetni.
+	Elérhető fizetős és ingyenes változata is, én az utóbbit használom, aminél némi megkötéssel kellett szembesülnöm, mint például a maximum időintervallum, amire az API-hívások szólhatnak az 1 év, tehát a grafikon ábrázolásának van határa. Ezen felül naponta csak 20 hívást tudok intézni, így erre a problémára egy megoldással kellett előállnom, amit a \aref{fig:server} \textbf{Szerver} szekcióban fogok ismertetni.
 
 \subsection{Postman}
 
-Mivel nem készült adatbázis az alkalmazásomhoz, így a fenti részben említett API hívásokat külső applikációval valósítom meg, ez pedig a \emph{Postman}. A Postman az egyik legnépszerűbb szoftvertesztelő eszköz, amelyet API tesztelésre, létrehozására, megosztására és dokumentálásra alkalmaznak a fejlesztők. 
+Mivel nem készült adatbázis az alkalmazásomhoz, így a fenti részben említett API hívásokat külső applikációval valósítom meg, ez pedig a \emph{Postman}. A Postman az egyik legnépszerűbb szoftvertesztelő eszköz, amelyet API tesztelésére, létrehozására, megosztására és dokumentálásra alkalmaznak a fejlesztők. 
 
 	Működését tekintve igen egyszerű a használata (lásd: \aref{fig:postman}). Elsőként ki kell választani milyen típusú hívást akarunk intézni, mivel adatokat szeretnék elérni ezért "GET" kéréssel hivatkozok. Továbbiakban szükségem van az elérni kívánt weboldal URL címére. Követetkező feltételhez tőzsdei ismeretek szükségesek. Minden nyilvánosan működő részvénytársaság regisztrálva van a globális piacon, ezáltal regisztrációs címmel, úgy nevezett "TOKEN"-nel rendelkeznek, például a legismertebb tőzsdei token a GOOGL, nevéből kifolyólag a Google részvényeire vonatkozik. Ezen teendők után meg kell adni a kéréshez tartozó időtartam kezdeti és záró dátumát, ha nem adjuk meg a záró dátumot, akkor a lekérés automatikusan az aktuális napot állítja be. 
 
@@ -65,11 +65,11 @@ Mivel nem készült adatbázis az alkalmazásomhoz, így a fenti részben említ
 
 A \textbf{Visual Studio Code} nyílt forráskódú kódszerkesztő, mely ingyenesen elérhető a fejlesztők számára. Az egyik legnépszerűbb alkalmazás, hiszen számos kiegészítővel rendelkezik, amely leveszi a terhet a felhasználó válláról, továbbá majdnem az összes ismert programozási nyelvet támogatja, például az általam is használt JavaScriptet, HTML-t, CSS-t és Node.js-t. 
 
-A VS Code beépített támogatást tartalmaz az intelligens kódkezelésre az IntelliSense segítségével, mely nem csak a kód kiegészítésében és refaktorálásában, de a navigációban is hasznos lehet, főleg egy összetettebb projekt kapcsán. Továbbá beépített támogatást tartalmaz Node.js hibakereséshez és JavaScript fejlesztéséhez. Ezeken felül lehetőségünkben áll bővítményeket hozzáadni, mint például \emph{Live Server}, illetve rendelkezik beépített parancssorral, melyből így futtathattam a Node.js kódomat. \cite{vsc}
+A VS Code beépített támogatást tartalmaz az intelligens kódkezelésre az IntelliSense segítségével, mely nem csak a kód kiegészítésében és refaktorálásában, de a navigációban is hasznos lehet, főleg egy összetettebb projekt kapcsán. Ezenkívül beépített támogatást tartalmaz Node.js hibakereséshez és JavaScript fejlesztéséhez. Ezeken felül lehetőségünkben áll bővítményeket hozzáadni, mint például \emph{Live Server}, illetve rendelkezik beépített parancssorral, melyből így futtathattam a Node.js kódomat. \cite{vsc}
 
 \subsubsection{Live Server}
 
-A Visual Studio Code Elő Szerver (Live Server) bővítménye hihetetlenül hasznos a webfejlesztés folyamat során. Lehetővé teszi, hogy egy kattintással elindítsunk egy HTML dokumentumot és lefuttat egy dinamikusan generált szervert, amely során megnyit egy böngésző ablakot és feltölti az általunk kódolt elemekkel. A fájlon végrehajtott bármilyen gyakorlati módosítást követően a böngésző ablakát újratölti és azonnal végrehatja a változtatásokat. 
+A Visual Studio Code Elő Szerver (Live Server) bővítménye hihetetlenül hasznos a webfejlesztés folyamat során. Lehetővé teszi, hogy egy kattintással elindítsunk egy HTML dokumentumot és lefuttat egy dinamikusan generált szervert, amely során megnyit egy böngésző ablakot és feltölti az általunk kódolt elemekkel. A fájlon végrehajtott bármilyen gyakorlati módosítást követően a böngésző ablakát újratölti és azonnal végrehajtja a változtatásokat. 
 
 \subsection{Git }
 
@@ -82,7 +82,7 @@ A Git ingyenes, nyílt forráskódú verziókezelő rendszer, amelyet a kis és 
 \item Nyomon követi az előzményeket, illetve biztonsági mentéseket készít \cite{git}
 \end{itemize}
 
-Az általam készített alkalmazást regisztráltam a GitHub felhő alapú szolgáltatásán, amely tárolja a szükséges kódokat és fájlokat. Fejlesztésem során több ágon (branch) dolgoztam, így a forráskód, csakis abban az esetben került fel a fő (main) ágamra, ha a mellékágakon tesztelési folyamatok után sem találtam hibát.
+Az általam készített alkalmazást regisztráltam a GitHub felhő alapú szolgáltatásán, amely tárolja a szükséges kódokat és fájlokat. Fejlesztésem során több ágon (branch) dolgoztam, így a forráskód csakis abban az esetben került fel a fő (main) ágamra, ha a mellékágakon tesztelési folyamatok után sem találtam hibát.
 
 \section{Kliens}
 
@@ -95,7 +95,7 @@ Először a Kezdőlap és Grafikonrajzoló oldalak funkcióival kezdtem az imple
 \label{fig:navbarfunc}
 \end{figure}
 
-További fejlesztés volt még az oldalak HTML vázának megvalósítása. Szükséges szempont volt, hogy a különböző oldalak más elemekkel töltsem fel, de alapjában véve egységes weboldal látszatát keltsék. A különböző részeket <section> címkével (tag) választom el, így átláthatóbb számomra, illetve néhány szekciót egyedi azonosítóval (id) láttam el, hogy működésüket, vagy külsejüket tudjam applikálni. A gombok és választható elemeknél a \textbf{Bootstrap} könyvtár beépített függvényeit használtam. A dátumokhoz tartozó gombokat jQuery függvény segítségével kiszelektálom és megjelenítek hozzájuk egy naptárat is. A naptáron lehetőség van kattintással kiválasztani az napot, vagy váltani a hónapo és évek között, illetve ha mégsem a megfelelő dátum lett kiválasztva, akkor törlés gomb megnyomásával hatálytalanítjuk a bevitt adatot \aref{fig:datepicker}.
+További fejlesztés volt még az oldalak HTML vázának megvalósítása. Szükséges szempont volt, hogy a különböző oldalak más elemekkel töltsem fel, de alapjában véve egységes weboldal látszatát keltsék. A különböző részeket <section> címkével (tag) választom el, így átláthatóbb számomra, illetve néhány szekciót egyedi azonosítóval (id) láttam el, hogy működésüket, vagy külsejüket tudjam applikálni. A gombok és választható elemeknél a \textbf{Bootstrap} könyvtár beépített függvényeit használtam. A dátumokhoz tartozó gombokat jQuery függvény segítségével kiszelektálom és megjelenítek hozzájuk egy naptárat is. A naptáron lehetőség van kattintással kiválasztani az napot, vagy váltani a hónapok és évek között, illetve ha mégsem a megfelelő dátum lett kiválasztva, akkor törlés gomb megnyomásával hatálytalanítjuk a bevitt adatot \aref{fig:datepicker}.
 
 \begin{figure}[h]
 \centering
@@ -106,9 +106,9 @@ További fejlesztés volt még az oldalak HTML vázának megvalósítása. Szük
 
 \pagebreak
 
-A kliens egy API-n keresztül, HTTP kérésekkel kommunikál a szerverrel. A kommunikáció a úgy néz ki, hogy a \textbf{Grafikonrajzoló} oldalon található gomb megnyomásával inicializáljuk a rajzolót egy aszinkron függvény használatával. A függvény csak akkor hívódik meg, ha a felhasználó beállította a programhoz elengedhetetlen adattagokat, ilyen adattagok például a grafikon típusa, valamelyik befektetési alap és az árfolyamok közül az egyik kiválasztása, illetve a kezdeti és záró dátumok. Hogy ne kelljen minden egyes alkalommal minden adattagot újra beállítani, így alapértelmezetten kiválasztottam az első három opcióbol egyet.
+A kliens egy API-n keresztül, HTTP kérésekkel kommunikál a szerverrel. A kommunikáció úgy néz ki, hogy a \textbf{Grafikonrajzoló} oldalon található gomb megnyomásával inicializáljuk a rajzolót egy aszinkron függvény használatával. A függvény csak akkor hívódik meg, ha a felhasználó beállította a programhoz elengedhetetlen adattagokat, ilyen adattagok például a grafikon típusa, valamelyik befektetési alap és az árfolyamok közül az egyik kiválasztása, illetve a kezdeti és záró dátumok. Hogy ne kelljen minden egyes alkalommal minden adattagot újra beállítani, így alapértelmezetten kiválasztottam az első három opcióbol egyet.
 	
-	Az aszinkron függvény megvizsgálja, hogy a gomb felett található kettő dátum input fel van töltve adatokkal, tehát a felhasználó kiválaszotta a kezdő és a záró dátumot \aref{fig:validation}. 
+	Az aszinkron függvény megvizsgálja, hogy a gomb felett található kettő dátum input fel van töltve adatokkal, tehát a felhasználó kiválasztotta a kezdő és a záró dátumot \aref{fig:validation}. 
 
 \begin{figure}[h]
 \centering
@@ -117,7 +117,7 @@ A kliens egy API-n keresztül, HTTP kérésekkel kommunikál a szerverrel. A kom
 \label{fig:validation}
 \end{figure}
 
-Abban az esetben, ha üresek, akkor egy figyelmeztető üzenet jelenik meg, ami felhívja a figyelmet a dátumok kitöltésének feltételére. További feltételek még, hogy a kezdeti és záró dátum nem eshet ugyan arra a napra, illetve a záró dátum nem lehet kisebb mint a kezdeti dátum, hiszen az API hívásban problémát okozna a hibásan megadott időintervallum.
+Abban az esetben, ha üresek, akkor egy figyelmeztető üzenet jelenik meg, ami felhívja a figyelmet a dátumok kitöltésének követelményére. További feltételek még, hogy a kezdeti és záró dátum nem eshet ugyan arra a napra, illetve a záró dátum nem lehet kisebb mint a kezdeti dátum, hiszen az API hívásban problémát okozna a hibásan megadott időintervallum.
 
 \begin{figure}[h]
 \centering
@@ -152,7 +152,7 @@ Most, hogy minden kért adat sikeresen elérte a klienst, következhet a diagram
 
 A grafikon megvalósításához a Chart.js definiált könyvtárát használom fel. Ehhez HTML oldalon szükséges <canvas> címkét létrehozni, hiszen két dimenziós ábrát szeretnék megvalósítani. Egyedi azonosítóval láttam el a canvas elemet, amire a \emph{script.js} fájlban hivatkozok. A grafikonnak három fontos paraméterrel rendelkezik, úgy mint a típusa (types), adathalmaza (data) és opciói (options).
 
-	A típúsát "switch" választási mechanizmussal érem el aképpen, hogy a felhasználó melyik befektetést választotta ki az oldalon, úgy az ahhoz tartozó megnevezést adom át a grafikonnak. 
+	A típusát "switch" választási mechanizmussal érem el aképpen, hogy a felhasználó melyik befektetést választotta ki az oldalon, úgy az ahhoz tartozó megnevezést adom át a grafikonnak. 
 Az adathalmazt egy függvény segítségével töltöm fel. Az API hívás során megkapott json fájlon végigiterál a függvény és egy tömbben adja vissza az adatokat amivel a grafikon tud dolgozni \aref{fig:chartData}. Az opcióit pedig json formátumban használom. A grafikon felett megjelenített idősávot függvény során valósítom meg, ami mindig a felhasználó által kiválasztott aktuális dátumot jeleníti meg, feltéve ha a dátumok megfelelnek a hibaellenőrzésnek. Animációval teszem látványosabbá a diagrammok megjelenítését.
 
 \begin{figure}[h]
@@ -238,7 +238,7 @@ app.use(cors({
 }));
 \end{cpp} 
 
-Most, hogy a szerver és a kliens is sikeresen kommunikál egymással, már csak lépés van hátra, mégpedig a felhasználó által igényelt adatok elérése. A weboldalon felhasználónak lehetősége adódik kiválasztani, hogy melyik befektetést szeretné megjeleníteni, illetve kitud választani két dátumot, miszerint mettől (kezdeti dátum input) meddig (záró dátum input) szeretné megjeleníteni a grafikonrajzolóval a kívánt gráfot. Majd ezeket a dátumot adatokat a kliens leküldi a szervernek, amely megkapva feldolgozza és a kért paraméterek alapján megszűri az adott json-t és úgy küldi vissza a kliensnek.
+Most, hogy a szerver és a kliens is sikeresen kommunikál egymással, már csak egy lépés van hátra, mégpedig a felhasználó által igényelt adatok elérése. A weboldalon felhasználónak lehetősége adódik kiválasztani, hogy melyik befektetést szeretné megjeleníteni, illetve kitud választani két dátumot, miszerint mettől (kezdeti dátum input) meddig (záró dátum input) szeretné megjeleníteni a grafikonrajzolóval a kívánt gráfot. Majd ezeket a dátum adatokat a kliens leküldi a szervernek, amely megkapva feldolgozza és a kért paraméterek alapján megszűri az adott json-t és úgy küldi vissza a kliensnek.
 
 \begin{figure}[h]
 \centering
