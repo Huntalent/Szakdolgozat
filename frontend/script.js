@@ -30,7 +30,7 @@ $(function () {
     // todayBtn: "linked",
     // todayHighlight: true,
     startDate: "2022-05-31",
-    endDate:'2023-05-31'
+    endDate:'2023-05-30'
   });
 });
 
@@ -42,7 +42,7 @@ $(function () {
     // todayBtn: "linked",
     // todayHighlight: true,
     startDate: "2022-05-31",
-    endDate:'2023-05-31'
+    endDate:'2023-05-30'
   });
 });
 
@@ -233,15 +233,19 @@ function getLabel(){
 
 //animáció amivel a gráfok jelennek meg
 function makeAnimation() {
+  console.log(delayed + " animation előtt delayed");
   return animation = {
-    onComplete: () => {
-      delayed = true;
-    },
     delay: (context) => {
       let delay = 0;
+      console.log(context) + " context if előtt";
+      console.log(context.type + " context.type if előtt");
+      console.log(context.mode + " context.mode if előtt");
+      console.log(delayed + " delayed if előtt");
       if (context.type === 'data' && context.mode === 'default' && !delayed) {
         delay = context.dataIndex * 300 + context.datasetIndex * 100;
       }
+      console.log(delay + " if után delay");
+      console.log(delayed + " if után delayed");
       return delay;
     },
   }

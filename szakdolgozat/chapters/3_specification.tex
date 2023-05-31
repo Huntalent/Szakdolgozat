@@ -1,10 +1,10 @@
 \Chapter{Specifikáció}
 
-Az előző fejezetben taglaltam milyen fogalmakkal találkozhat a felhasználó a weboldalon. Ebben a fejezetben ismertetem a szoftver tervezésének lépéseit, a felhasznált technológiák technikai hátterét, továbbá bemutatom az általam válaszott grafikus könyvtárat a Chart.JS-t és hogy miért erre esett a döntésem.
+Az előző fejezetben taglaltam milyen fogalmakkal találkozhat a felhasználó a weboldalon. Ebben a fejezetben ismertetem a szoftver tervezésének lépéseit, a felhasznált technológiák technikai hátterét, továbbá bemutatom az általam válaszott grafikus könyvtárat a Chart.js-t és hogy miért erre esett a választásom.
 
 \section{Tervezés  \label{fig:planning}}
 
-A programom tervezése során több szempontot vettem figyelemben. Elődleges szempont volt, hogy webalkalmazásként működne legjobban. Ezt az érvet azzal tudom alátámasztani, hogy szem előtt tartva az előnyeit (könnyű hozzáférés, naprakész adatok, jól szemléltethető, skálázható), illetve személyes szakmai tudásomat is a frontend fejlesztés során szereztem. Másodlagos érvemet pedig azzal tudom alátámasztani, hogy az egyetemi tanulmányaim során is webfejlesztésre szakosodtam.
+A programom tervezése során több aspketust vettem figyelembe. Elsődleges szempont volt, hogy webalkalmazásként működne legjobban. Ezt az érvet azzal tudom alátámasztani, hogy szem előtt tartva az előnyeit (könnyű hozzáférés, naprakész adatok, jól szemléltethető, skálázható), illetve személyes szakmai tudásomat is a frontend fejlesztés során szereztem. Másodlagos érvemet pedig azzal tudom alátámasztani, hogy az egyetemi tanulmányaim során is webfejlesztésre szakosodtam.
 
 	Az alkalmazás tervezésekor az egyik általam ismert agilis módszertan szerint dolgoztam, amelynek neve \emph{Extreme Programming} (XP). Az Extreme Programming egy specifikus keretrendszer, amelynek célja nem csak a kiváló minőségű szoftver(ek) előállítása, hanem az egész folyamat megkönnyítése is a fejlesztő számára.  A fejlesztési folyamatomatot 5 fázisra lehet bontani.\cite{agile} \\
 
@@ -49,7 +49,7 @@ A programom tervezése során több szempontot vettem figyelemben. Elődleges sz
 \section{Felhasznált technológiák}
 
 \subsection{HTML5}
-Mivel a programom online felületre lett tervezve, annak szerkezeti felépítése HTML-ben íródott. A HTML azaz Hypertext Markup Language, magyarul hipertext jelölő nyelv, egy leíró nyelv, amely egy weblap felépítését specifikálja az internetes böngészők felé. Ahogy nevében is láthatjuk, nem egy programozási nyelv, ez azt jelenti, hogy nem programozási logikák megírására, vagy adatok kezelésére használjuk, hanem különböző utasításokkal meghatározzuk az oldalunk struktúráját. \\
+Mivel a programom online felületre lett tervezve, annak szerkezeti felépítése HTML-ben íródott. A HTML azaz Hypertext Markup Language, magyarul hipertext jelölő nyelv, egy leíró nyelv, amely egy weblap felépítését specifikálja az internetes böngészők felé. Ahogy nevében is láthatjuk, nem egy programozási nyelv, amely azt jelenti, hogy nem programozási logikák megírására, vagy adatok kezelésére használjuk, hanem különböző utasításokkal meghatározzuk az oldalunk struktúráját. \\
 
 \begin{figure}[h]
 \centering
@@ -114,7 +114,7 @@ A legegyszerűbb módja annak, hogy figyelemfelkeltő ikonokat helyezzünk el we
 
 \subsection{NodeJS }
 
-A Node.js egy nyílt forráskódú, többplatformos futási környezet amiben a gépünkön JavaScript kódot tudunk végrehajtani. Széles körben használják szerveroldali programozáshoz, így a fejlesztők használhatják a JavaScriptet kliensoldali és szerveroldali kódokhoz anélkül, hogy további nyelvet kellene megtanulniuk. Általában egy bizonyos címen és porton figyel az szerver, és mikor kérést kap, elvégzi a leprogramozott funkciókat, majd tétlen állapotban várakozik a következő hívásig. Mivel a Node.js nem folytat közvetlenül kimeneti, vagy bementi műveleteket, így erőforrások blokkolása nem merül fel, ezáltal nem kell félni, hogy a program elakad. Tehát a Node.js ideális interaktív megjelenítő alkalmazások fejlesztésére. \cite{nodeJS}
+A Node.js egy nyílt forráskódú, többplatformos futási környezet, amiben a gépünkön JavaScript kódot tudunk végrehajtani. Széles körben alkalmazzák szerveroldali programozáshoz, így a fejlesztők használhatják a JavaScriptet kliensoldali és szerveroldali kódokhoz anélkül, hogy további nyelvet kellene megtanulniuk. Általában egy bizonyos címen és porton figyel az szerver, és mikor kérést kap, elvégzi a leprogramozott funkciókat, majd tétlen állapotban várakozik a következő hívásig. Mivel a Node.js nem folytat közvetlenül kimeneti, vagy bementi műveleteket, így erőforrások blokkolása nem merül fel, ezáltal nem kell félni, hogy a program elakad. Tehát a Node.js ideális interaktív megjelenítő alkalmazások fejlesztésére. \cite{nodeJS}
 
 \subsubsection{Node Package Manager}
 
@@ -172,21 +172,23 @@ A Chart.js egy ingyenes, nyílt forráskódú JavaScript-könyvtár adatvizualiz
 \subsection{ChartJS összehasonlítása más grafikus könyvtárakkal}
 
 \subsubsection{Chart.JS összehasonlítása D3.JS keretrendszerrel}
-A csillagok száma alapján a GitHubon a második legnépszerűbb JavaScript diagramkönyvtár a D3.js után, amelyet ugyan lényegesen könnyebben használhatónak tartanak, de kevésbé testreszabható, mint az utóbbi. A Chart.js HTML5 Canvas elemen belül jelenik meg, és széles körben elismert, mint az egyik legjobb adatvizualizációs könyvtár.
-A Chart.js nagymértékben testreszabható, hogy néhányat említsek: egyéni beépülő modulokkal, amelyek segítségével megjegyzéseket, nagyítást vagy húzással hozhat létre, hogy néhány dolgot említsünk 
+A csillagok száma alapján a GitHubon a második legnépszerűbb JavaScript diagramkönyvtár a D3.js után, amelyet ugyan lényegesen könnyebben kezelhetőnek tartanak, de kevésbé egyéni igényeket kiszolgáló, mint az utóbbi. A Chart.js HTML5 Canvas elemen belül jelenik meg, és széles körben elismert, mint az egyik legjobb adatvizualizációs könyvtár.
+A Chart.js nagymértékben testreszabható, hogy néhányat említsek: egyéni beépülő modulokkal, amelyek segítségével megjegyzéseket, nagyítást vagy húzással hozhat létre.
 
-	A Chart.js a diagramelemeket HTML5 Canvas jeleníti meg, ellentétben számos más, többnyire D3.js-alapú diagramkönyvtárral, amelyek Skálázható Vektor Grafika (SVG)-ként jelennek meg. A Canvas megjelenítés nagyon hatékonyvá teszi a Chart.js-t, különösen nagy adatkészletek és összetett vizualizációk esetén, amelyek egyébként több ezer SVG-csomópontot igényelnének a DOM-fában. Ugyanakkor a Canvas renderelés nem engedélyezi a CSS stílust, ezért ehhez beépített opciókat kell használni, vagy különböző diagramtípusokaz kell létrehozni, hogy a kívánt gráfokat jelenjenek meg. 
+	A Chart.js a diagramelemeket HTML5 Canvas jeleníti meg, ellentétben számos más, többnyire D3.js-alapú diagramkönyvtárral, amelyek Skálázható Vektor Grafika (SVG)-ként jelennek meg. A Canvas megjelenítés nagyon hatékonyvá teszi a Chart.js-t, különösen nagy adatkészletek és összetett vizualizációk esetén, amelyek egyébként több ezer SVG-csomópontot igényelnének a DOM-fában. Ugyanakkor a Canvas renderelés nem engedélyezi a CSS stílust, ezért ehhez beépített opciókat kell használni, vagy különböző diagramtípusokaz kell létrehozni, hogy a kívánt gráfok jelenjenek meg. 
 
-	A Chart.js nagyon jól használható nagy adathalmazokhoz. Az ilyen adatkészletek hatékonyan feldolgozhatóak belső formátum használatával, így eredményes az adatok elemzéséhez és normalizálásához. Végül a Chart.js által használt Canvas megjelenítés csökkenti a DOM-fájának terhelését, míg az SVG-megjelenítéshez nagyon erőforrás igényes tud lenni. \cite{wikiChart}
+	A Chart.js nagyon jól alkalmazható nagy adathalmazokhoz. Az ilyen adatkészletek hatékonyan feldolgozhatóak belső formátum működtetésével, így eredményes az adatok elemzéséhez és normalizálásához. Végül a Chart.js által kezelt Canvas megjelenítés csökkenti a DOM-fájának terhelését, míg az SVG-megjelenítéshez nagyon erőforrás igényes tud lenni. \cite{wikiChart}
+
+\pagebreak
 
 \paragraph{ChartJS előnyei}
 
 \begin{itemize}
-\item Mivel a Chart.js egy JavaScript könyvtár, így lehetővé teszi, hogy bármilyen választott JS keretrendszerrel használjuk, mint például az Angular.js vagy a React.js..
+\item Mivel a Chart.js egy JavaScript könyvtár, így lehetővé teszi, hogy bármilyen választott JS keretrendszerrel dolgozzunk, mint például az Angular.js vagy a React.js.
 \item Használata könnyű és minimális fejlesztési ismeretet igényel.
-\item Nyílt forráskódú, így csak a meglévő könyvtárat kell felhasználni és nem a fejlesztőnek kell mindent felépíteni.
-\item World Wibe Web Consortion (W3C) szabványt követi, így a használatához nincs szükség más böngészőhöz tartozó technológiára, vagy bővítményre.
+\item Nyílt forráskódú, így csak a meglévő könyvtárat kell igénybe venni és nem a fejlesztőnek kell mindent felépíteni.
+\item World Wibe Web Consortion (W3C) szabványt követi, így nincs szükség más böngészőhöz tartozó technológiára, vagy bővítményre.
 \item Több megjelenítő eszközzel ellentétben 8 féle diagram megjelenítését engedélyezi.
-\item Adatok hatákony manipulálását teszi lehetővé. Rendkívül gyorsan jelenik meg és saját animációkkal rendelkezik.
+\item Adatok hatékony manipulálását teszi lehetővé. Rendkívül gyorsan jelenik meg és saját animációkkal rendelkezik.
 \item Kiváló dokumentációval van ellátva.
 \end{itemize}
