@@ -121,6 +121,7 @@ let selectedGraph = "line";
 let selectedInvest = "AAPL";
 let selectedValue = "open";
 let textType = 0;
+let delayed;
 
 //A diagram típusait változtatja kattintásra
 function getTypes(){
@@ -163,6 +164,7 @@ function addGraphTime() {
   graphTime.textContent = `Grafikon (${startDateGraph}  -  ${endDateGraph})`;
   graphTime.classList.add("graph-time");
   graphTimeShow.appendChild(graphTime);
+
   if(graphTimeShow.getElementsByClassName("graph-time").length > 1){
     const dateToRemove = document.querySelectorAll('#graphTime span');
     dateToRemove[0].remove()
@@ -172,6 +174,7 @@ function addGraphTime() {
 function removeGraphTime(){
   graphTime.textContent = "";
 }
+
 //Nem lehet dátum nélkül grafikont megjeleníteni
 function missingDates(){
   let emptydate = 0;
@@ -228,10 +231,28 @@ function getLabel(){
   return selectedName
 }
 
+//animáció amivel a gráfok jelennek meg
+function makeAnimation() {
+  return animation = {
+    onComplete: () => {
+      delayed = true;
+    },
+    delay: (context) => {
+      let delay = 0;
+      if (context.type === 'data' && context.mode === 'default' && !delayed) {
+        delay = context.dataIndex * 300 + context.datasetIndex * 100;
+      }
+      return delay;
+    },
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Grafikon létrehozása
 --------------------------------------------------------------*/
+getTypes()  
+
 btn.addEventListener("click", async () =>  {
   //Ha az missingDates "üres", akkor mindkettő dátum ki van választva és megjelenhet a grafikon
   if (missingDates() != 0){
@@ -252,6 +273,38 @@ btn.addEventListener("click", async () =>  {
     const url = `http://localhost:8080/api?ticker=${selectedInvest}&&start_date=${startDateGraph}&end_date=${endDateGraph}`;
     const stockValues = await fetchStockValues(url)
 
+    const data = {
+      labels: stockValues.map(stockValue => stockValue.date),
+      datasets: [{
+        label: getLabel(),
+        data: stockValues.map(stockValue => stockValue[selectedValue]),
+        borderWidth: 1,
+      }]
+    }
+    
+    const options = {
+      maintainAspectRatio: false,
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: true,
+          text: addGraphTime()
+        }
+      },
+      animation: makeAnimation(),
+      scales: {
+        x: {
+          stacked: true,
+        },
+        y: {
+          stacked: true
+        }
+      }
+    }
+
     inlineValidation.innerText = ""
 
     makeNewChart()
@@ -261,27 +314,8 @@ btn.addEventListener("click", async () =>  {
     //Grafikon paraméterei
     new Chart(ctx, {
         type: selectedGraph,
-        data: {
-          labels: stockValues.map(stockValue => stockValue.date),
-          datasets: [{
-            label: getLabel(),
-            data: stockValues.map(stockValue => stockValue[selectedValue]),
-            borderWidth: 1
-          }]
-        },
-        options: {
-          plugins: {
-            title: {
-              display: true,
-              text: addGraphTime()
-            }
-          },
-          scales: {
-            y: {
-              beginAtZero: true
-            }
-          }
-        }
+        data: data,
+        options: options,
       })
   }  
 });

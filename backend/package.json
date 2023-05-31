@@ -1,7 +1,7 @@
 {
   "name": "bencze_zsombor_szakdolgozat_ii",
   "version": "1.0.0",
-  "description": "Exprail graph editor",
+  "description": "raph editor for stock data",
   "main": "mock_server.js",
   "scripts": {
     "start": "node mock_server.js"

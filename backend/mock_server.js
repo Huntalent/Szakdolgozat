@@ -7,12 +7,12 @@ const app = express();
 const PORT = 8080;
 
 //Mivel a szerver és a kliens nem egy url címen fut ezért globálisan össze kell őket hangolni
-var cors = require('cors')
+let cors = require('cors')
 app.use(cors({
    origin: '*'
 }));
 
-//Front end-ről megkapott adatok alapján kiválasztja a kezdeti és záró dátumon belüli értékeket
+//Frontend-ről megkapott adatok alapján kiválasztja a kezdeti és záró dátumon belüli értékeket
 function getData(tickerName, startDate, endDate) {
     let obj = JSON.parse(fs.readFileSync('data/' + tickerName + '.json', 'utf8'));
 

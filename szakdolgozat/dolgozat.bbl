@@ -33,6 +33,9 @@ Forrás: \url{https://promanconsulting.hu/mi-az-agilis-modszertan-legelterjedteb
 \bibitem{cssTypes}
 Forrás: \url{https://www.bitdegree.org/learn/inline-css}, \textit{Felhasználtam az  oldalon található CSS elérési útvonalakat}
 
+\bibitem{Bootstrap}
+Forrás: \url{https://getbootstrap.com/docs/5.3/getting-started/introduction/}, \textit{Felhasználtam az  oldalon található leírást}
+
 \bibitem{gridSystem}
 Forrás: \url{https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp}, \textit{Felhasználtam az  oldalon található képet}
 
@@ -47,6 +50,30 @@ Forrás: \url{https://www.chartjs.org/docs/latest/}, \textit{Felhasználtam az  
 
 \bibitem{wikiChart}
 Forrás: \url{https://en.wikipedia.org/wiki/Chart.js}, \textit{Felhasználtam az  oldalon található adatokat}
+
+\bibitem{eod}
+Forrás: \url{https://eodhistoricaldata.com/financial-apis/stock-etfs-fundamental-data-feeds/}, \textit{Felhasználtam az  oldalon található ismertető bejegyzést}
+
+\bibitem{vsc}
+Forrás: \url{https://code.visualstudio.com/learn}, \textit{Felhasználtam az  oldalon található Áttekintés fejezet tartalmát}
+
+\bibitem{git}
+Forrás: \url{https://www.simplilearn.com/tutorials/git-tutorial/what-is-git#what_is_git}, \textit{Felhasználtam az  oldalon található leírást és jellemzést}
+
+\bibitem{nodeServer}
+Forrás: \url{https://www.w3schools.com/nodejs/nodejs_http.asp}, \textit{Az itt látható kódrészlettel hoztam létre a szervert}
+
+\bibitem{draw}
+Forrás: \url{https://app.diagrams.net/}, \textit{Draw.io oldalon készítettem el a folyamatábrát}
+
+\bibitem{Aegon}
+Forrás: \url{https://www.vigam.hu/}, \textit{Az oldal hatalmas inspirációt jelentettem a weboldalam struktúrájában}
+
+\bibitem{contact}
+Forrás: \url{https://www.honlapdiszkont.com/milyen-a-jol-konvertalo-kezdolap/}, \textit{Felhasználtam az oldalon található leírásokat és tippeket}
+
+\bibitem{investo}
+Forrás: \url{https://www.investopedia.com/terms/s/stock-analysis.asp}, \textit{Felhasználtam az oldalon található  "Understanding Stock Analysis" bejegyzést}
 
 \end{thebibliography}
 

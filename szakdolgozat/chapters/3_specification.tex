@@ -2,11 +2,11 @@
 
 Az előző fejezetben taglaltam milyen fogalmakkal találkozhat a felhasználó a weboldalon. Ebben a fejezetben ismertetem a szoftver tervezésének lépéseit, a felhasznált technológiák technikai hátterét, továbbá bemutatom az általam válaszott grafikus könyvtárat a Chart.JS-t és hogy miért erre esett a döntésem.
 
-\section{Tervezés \cite{agile}}
+\section{Tervezés  \label{fig:planning}}
 
 A programom tervezése során több szempontot vettem figyelemben. Elődleges szempont volt, hogy webalkalmazásként működne legjobban. Ezt az érvet azzal tudom alátámasztani, hogy szem előtt tartva az előnyeit (könnyű hozzáférés, naprakész adatok, jól szemléltethető, skálázható), illetve személyes szakmai tudásomat is a frontend fejlesztés során szereztem. Másodlagos érvemet pedig azzal tudom alátámasztani, hogy az egyetemi tanulmányaim során is webfejlesztésre szakosodtam.
 
-	Az alkalmazás tervezésekor az egyik általam ismert agilis módszertan szerint dolgoztam, amelynek neve \emph{Extreme Programming} (XP). Az Extreme Programming egy specifikus keretrendszer, amelynek célja nem csak a kiváló minőségű szoftver(ek) előállítása, hanem az egész folyamat megkönnyítése is a fejlesztő számára.  A fejlesztési folyamatomatot 5 fázisra lehet bontani. \\
+	Az alkalmazás tervezésekor az egyik általam ismert agilis módszertan szerint dolgoztam, amelynek neve \emph{Extreme Programming} (XP). Az Extreme Programming egy specifikus keretrendszer, amelynek célja nem csak a kiváló minőségű szoftver(ek) előállítása, hanem az egész folyamat megkönnyítése is a fejlesztő számára.  A fejlesztési folyamatomatot 5 fázisra lehet bontani.\cite{agile} \\
 
 \textbf{Tervezés (planning)}
 \begin{itemize}
@@ -90,7 +90,7 @@ Ahhoz, hogy a HTML által definiált oldalunkon megjelenjenek a kívánt elemek 
 
 \subsubsection{Bootstrap5}
 
-A Bootstrap egy ingyenes, nyílt forráskódú frontend fejlesztői keretrendszer webhelyek és webes alkalmazások létrehozásához. Úgy tervezték, hogy lehetővé tegye a webhelyek reszponzív fejlesztését , és a Bootstrap szintaxis gyűjteményt biztosít a sablontervekhez, így a fejlesztőknek csak be kell illeszteni a kódot egy előre meghatározott CSS-keretrendszerbe (grid). Ez a rendszer 12 oszlopos rácsrendszert használ, ezáltal egy reszponzív weboldalt több módon egyenletesen lehet felosztani, ahogy az eszköz nézete megváltozik különféle felbontásban. 
+A Bootstrap egy ingyenes, nyílt forráskódú frontend fejlesztői keretrendszer webhelyek és webes alkalmazások létrehozásához. Úgy tervezték, hogy lehetővé tegye a webhelyek reszponzív fejlesztését , és a Bootstrap szintaxis gyűjteményt biztosít a sablontervekhez, így a fejlesztőknek csak be kell illeszteni a kódot egy előre meghatározott CSS-keretrendszerbe (grid). Ez a rendszer 12 oszlopos rácsrendszert használ, ezáltal egy reszponzív weboldalt több módon egyenletesen lehet felosztani, ahogy az eszköz nézete megváltozik különféle felbontásban. \cite{Bootstrap}
 
 \begin{figure}[h]
 \centering
@@ -112,9 +112,9 @@ A rácsrendszerek olyan segédeszközök, amelyeket a tervezők a nehezen átlá
 
 A legegyszerűbb módja annak, hogy figyelemfelkeltő ikonokat helyezzünk el weboldalunkon, ha ikon készletet használunk. Én a Font Awsome internetes ikonkönyvtárát és eszközkészletét használtam fel.
 
-\subsection{NodeJS \cite{nodeJS}}
+\subsection{NodeJS }
 
-A Node.js egy nyílt forráskódú, többplatformos futási környezet amiben a gépünkön JavaScript kódot tudunk végrehajtani. Széles körben használják szerveroldali programozáshoz, így a fejlesztők használhatják a JavaScriptet kliensoldali és szerveroldali kódokhoz anélkül, hogy további nyelvet kellene megtanulniuk. Általában egy bizonyos címen és porton figyel az szerver, és mikor kérést kap, elvégzi a leprogramozott funkciókat, majd tétlen állapotban várakozik a következő hívásig. Mivel a Node.js nem folytat közvetlenül kimeneti, vagy bementi műveleteket, így erőforrások blokkolása nem merül fel, ezáltal nem kell félni, hogy a program elakad. Tehát a Node.js ideális interaktív megjelenítő alkalmazások fejlesztésére. \\
+A Node.js egy nyílt forráskódú, többplatformos futási környezet amiben a gépünkön JavaScript kódot tudunk végrehajtani. Széles körben használják szerveroldali programozáshoz, így a fejlesztők használhatják a JavaScriptet kliensoldali és szerveroldali kódokhoz anélkül, hogy további nyelvet kellene megtanulniuk. Általában egy bizonyos címen és porton figyel az szerver, és mikor kérést kap, elvégzi a leprogramozott funkciókat, majd tétlen állapotban várakozik a következő hívásig. Mivel a Node.js nem folytat közvetlenül kimeneti, vagy bementi műveleteket, így erőforrások blokkolása nem merül fel, ezáltal nem kell félni, hogy a program elakad. Tehát a Node.js ideális interaktív megjelenítő alkalmazások fejlesztésére. \cite{nodeJS}
 
 \subsubsection{Node Package Manager}
 
@@ -124,12 +124,12 @@ A Node.js futtatásához Node Package Manager (NPM), azaz Node Csomagkezelőt al
 
 Az Express.js egy Node.js backend keretrendszer, amelyet arra terveztek, hogy az API webalkalmazásait gyorsan és platformokon átívelő almazásokat készítsen, és megkönnyítse a node js-t dolgát. Webes alkalmazások és RESTful API-k építésére tervezték anélkül, hogy bármiben is korlátozná a szerver funkcióit.
 
-\subsection{JavaScript \cite{wikiJS}}
+\subsection{JavaScript}
 
 A JavaScript, amelyet gyakran JS-ként is szoktak említeni, egy olyan többparadigmás, dinamikus programozási nyelv, ami lehetővé teszi, hogy a weblapokon komplex funkciókat valósíthassunk meg HTML és CSS használatával. A webhelyek majdnem 100\%-a JavaScriptet használ az elsőrendű függvényeivel, továbbá az alacsony erőforrásigényével. Támogatja a prototípus-alapú objektumorientációval és első osztályú funkciókkal rendelkező kódolást, továbbá az eseményvezérelt, funkcionális és kötelező programozási stílusokat. 
 
 Működését tekintve, nem típusos nyelv, így nem szükséges a változókat deklarálni használat előtt, a megfelelő típust futás közben veszi fel. A JavaScriptet támogató böngésző betölti a HTML oldalt, amennyiben script kód található benne a JavaScript elemző motor kerül előtérbe és a script kód betöltődik. Alkalmazásprogramozási felületekkel (API-kkal) rendelkezik a szöveggel, dátumokkal, reguláris kifejezésekkel való munkához. A legnépszerűbb futásidejű rendszer erre a felhasználásra a Node.js. \\
-(Bár a Java és a JavaScript nevüket és szintaxisukat tekintve hasonlóak, a két nyelv különbözik, és nagymértékben eltér egymástól.)
+(Bár a Java és a JavaScript nevüket és szintaxisukat tekintve hasonlóak, a két nyelv különbözik, és nagymértékben eltér egymástól.)  \cite{wikiJS}
 
 
 \subsubsection{JQuery}
@@ -142,22 +142,20 @@ A jQuery egy nyílt forráskódú, gazdag JavaScript-keretrendszer, amely leegys
 
 A JavaScript Objektum Jelölés (JSON) egy nyílt szabványos,  nyelvtől független fájlformátum és adatcsere -formátum, amely ember által olvasható szöveget használ az adatobjektumok tárolására és továbbítására. Nagyon elterjedt adatformátum, amelyet sokrétűen alkalmaznak az elektronikus adatcserében, beleértve az adatcserét webes alkalmazások és szerverek között. A JSON két struktúrára épül: \\
 
-Név - érték párok gyűjteménye. Különböző nyelveken ez objektumként , rekordként, struktúraként, szótárként, hash-táblaként, kulcsos listaként vagy asszociatív tömbként valósul meg .
-Az értékek listája rendezett. Ezen értékek lehetnek, sztingek, számok,  másik JSON, tömbök, vagy boolean értékek.
-A .json fájlnevet ezen objektumok kiterjesztésére használják, nem csak JavaScript programozási nyelven íródott kódokra is. \\
+Név - érték párok gyűjteménye. Különböző nyelveken ez objektumként , rekordként, struktúraként, szótárként, hash-táblaként, kulcsos listaként vagy asszociatív tömbként valósul meg .Az értékek listája rendezett. Ezen értékek lehetnek, sztringek, számok,  másik JSON, tömbök, vagy boolean értékek. A .json fájlnevet ezen objektumok kiterjesztésére használják, nem csak JavaScript programozási nyelven íródott kódokra is. \\
 
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.9]{images/jsonExample.png}
-\caption{Egy alkalmazott adatai JSON-ként tárolva (forrás: \cite{jsonExample})}
+\caption{Egy alkalmazott adatai JSON-ként tárolva }
 \end{figure}
 
 
-\section{Miért a Chart.JS? \cite{ChartJS}}
+\section{Miért a Chart.JS? }
 
 \subsection{ChartJS bemutatása}
 
-A Chart.js egy ingyenes, nyílt forráskódú JavaScript-könyvtár adatvizualizációhoz , amely nyolc diagramtípust támogat : vonal, oszlop, terület, torta ( fánk ), buborék, radar, poláris és szórt diagram. JavaScript nyelven használt beépülő modulokat, diagramtípusokat és testreszabási lehetőségeket kínál. A számtalan beépített modul mellett, a közösség által karbantartott diagramtípusokat is elérhetővé tesz. Ezen felül több diagramtípus kombinálható vegyes diagrammá ugyan azon a Canvas elemen belül.
+A Chart.js egy ingyenes, nyílt forráskódú JavaScript-könyvtár adatvizualizációhoz , amely nyolc diagramtípust támogat : vonal, oszlop, terület, torta ( fánk ), buborék, radar, poláris és szórt diagram. JavaScript nyelven használt beépülő modulokat, diagramtípusokat és testreszabási lehetőségeket kínál. A számtalan beépített modul mellett, a közösség által karbantartott diagramtípusokat is elérhetővé tesz. Ezen felül több diagramtípus kombinálható vegyes diagrammá ugyan azon a Canvas elemen belül. \cite{ChartJS}
 
 \begin{figure}[h]
 \centering
@@ -171,7 +169,7 @@ A Chart.js egy ingyenes, nyílt forráskódú JavaScript-könyvtár adatvizualiz
 \caption{Oszlopdiagram ami szavazatok számát mutatja meg (forrás: \cite{ChartJS})}
 \end{figure}
 
-\subsection{ChartJS összehasonlítása más grafikus könyvtárakkal \cite{wikiChart}}
+\subsection{ChartJS összehasonlítása más grafikus könyvtárakkal}
 
 \subsubsection{Chart.JS összehasonlítása D3.JS keretrendszerrel}
 A csillagok száma alapján a GitHubon a második legnépszerűbb JavaScript diagramkönyvtár a D3.js után, amelyet ugyan lényegesen könnyebben használhatónak tartanak, de kevésbé testreszabható, mint az utóbbi. A Chart.js HTML5 Canvas elemen belül jelenik meg, és széles körben elismert, mint az egyik legjobb adatvizualizációs könyvtár.
@@ -179,7 +177,7 @@ A Chart.js nagymértékben testreszabható, hogy néhányat említsek: egyéni b
 
 	A Chart.js a diagramelemeket HTML5 Canvas jeleníti meg, ellentétben számos más, többnyire D3.js-alapú diagramkönyvtárral, amelyek Skálázható Vektor Grafika (SVG)-ként jelennek meg. A Canvas megjelenítés nagyon hatékonyvá teszi a Chart.js-t, különösen nagy adatkészletek és összetett vizualizációk esetén, amelyek egyébként több ezer SVG-csomópontot igényelnének a DOM-fában. Ugyanakkor a Canvas renderelés nem engedélyezi a CSS stílust, ezért ehhez beépített opciókat kell használni, vagy különböző diagramtípusokaz kell létrehozni, hogy a kívánt gráfokat jelenjenek meg. 
 
-	A Chart.js nagyon jól használható nagy adathalmazokhoz. Az ilyen adatkészletek hatékonyan feldolgozhatóak belső formátum használatával, így eredményes az adatok elemzéséhez és normalizálásához. Végül a Chart.js által használt Canvas megjelenítés csökkenti a DOM-fájának terhelését, míg az SVG-megjelenítéshez nagyon erőforrás igényes tud lenni. 
+	A Chart.js nagyon jól használható nagy adathalmazokhoz. Az ilyen adatkészletek hatékonyan feldolgozhatóak belső formátum használatával, így eredményes az adatok elemzéséhez és normalizálásához. Végül a Chart.js által használt Canvas megjelenítés csökkenti a DOM-fájának terhelését, míg az SVG-megjelenítéshez nagyon erőforrás igényes tud lenni. \cite{wikiChart}
 
 \paragraph{ChartJS előnyei}
 
