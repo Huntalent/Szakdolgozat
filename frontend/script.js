@@ -121,7 +121,7 @@ let selectedGraph = "line";
 let selectedInvest = "AAPL";
 let selectedValue = "open";
 let textType = 0;
-let delayed;
+let delayed = false;
 
 //A diagram típusait változtatja kattintásra
 function getTypes(){
@@ -233,19 +233,15 @@ function getLabel(){
 
 //animáció amivel a gráfok jelennek meg
 function makeAnimation() {
-  console.log(delayed + " animation előtt delayed");
   return animation = {
+    onComplete: () => {
+      delayed;
+    },
     delay: (context) => {
       let delay = 0;
-      console.log(context) + " context if előtt";
-      console.log(context.type + " context.type if előtt");
-      console.log(context.mode + " context.mode if előtt");
-      console.log(delayed + " delayed if előtt");
       if (context.type === 'data' && context.mode === 'default' && !delayed) {
         delay = context.dataIndex * 300 + context.datasetIndex * 100;
       }
-      console.log(delay + " if után delay");
-      console.log(delayed + " if után delayed");
       return delay;
     },
   }
@@ -286,6 +282,12 @@ btn.addEventListener("click", async () =>  {
       }]
     }
     
+    //ha az adathalmaz nagyobb, mint egy hónap, akkor az animáció nem fut le, mert túl sok időt venne igénybe
+    if (stockValues.length > 30){
+      delayed = true;
+    }
+
+
     const options = {
       maintainAspectRatio: false,
       responsive: true,

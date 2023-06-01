@@ -1,14 +1,14 @@
 \Chapter{Specifikáció}
 
-Az előző fejezetben taglaltam milyen fogalmakkal találkozhat a felhasználó a weboldalon. Ebben a fejezetben ismertetem a szoftver tervezésének lépéseit, a felhasznált technológiák technikai hátterét, továbbá bemutatom az általam válaszott grafikus könyvtárat a Chart.js-t és hogy miért erre esett a választásom.
+Az előző fejezetben taglaltam milyen fogalmakkal találkozhat a felhasználó az alkalmazásban. Ebben a fejezetben ismertetem a szoftver tervezésének lépéseit, a felhasznált technológiák technikai hátterét, továbbá bemutatom az általam válaszott grafikus könyvtárat, a Chart.js-t, és hogy miért erre esett a választásom.
 
 \section{Tervezés  \label{fig:planning}}
 
 A programom tervezése során több aspketust vettem figyelembe. Elsődleges szempont volt, hogy webalkalmazásként működne legjobban. Ezt az érvet azzal tudom alátámasztani, hogy szem előtt tartva az előnyeit (könnyű hozzáférés, naprakész adatok, jól szemléltethető, skálázható), illetve személyes szakmai tudásomat is a frontend fejlesztés során szereztem. Másodlagos érvemet pedig azzal tudom alátámasztani, hogy az egyetemi tanulmányaim során is webfejlesztésre szakosodtam.
 
-	Az alkalmazás tervezésekor az egyik általam ismert agilis módszertan szerint dolgoztam, amelynek neve \emph{Extreme Programming} (XP). Az Extreme Programming egy specifikus keretrendszer, amelynek célja nem csak a kiváló minőségű szoftver(ek) előállítása, hanem az egész folyamat megkönnyítése is a fejlesztő számára.  A fejlesztési folyamatomatot 5 fázisra lehet bontani.\cite{agile} \\
+	Az alkalmazás tervezésekor az egyik általam ismert agilis módszertan szerint dolgoztam, amelynek neve \emph{Extreme Programming} (XP). Az Extreme Programming egy specifikus keretrendszer, amelynek célja nem csak a kiváló minőségű szoftver(ek) előállítása, hanem az egész folyamat megkönnyítése is a fejlesztő számára.  A fejlesztési folyamatomatot 5 fázisra lehet bontani. \cite{agile} \\
 
-\textbf{Tervezés (planning)}
+\textbf{Tervezés (Planning)}
 \begin{itemize}
 \item Piackutatás
 \item Funkciók meghatározása
@@ -16,7 +16,7 @@ A programom tervezése során több aspketust vettem figyelembe. Elsődleges sze
 \item Felhasználandó technológiák
 \end{itemize}
 
-\textbf{Elemzések (analysis)}
+\textbf{Elemzések (Analysis)}
 \begin{itemize}
 \item Alkalmazás struktúrákra felosztása
 \item Elkészüléshez szükséges idő meghatározása
@@ -30,7 +30,7 @@ A programom tervezése során több aspketust vettem figyelembe. Elsődleges sze
 \item Összpontosított megjelenés létrehozása és végrehajtása
 \end{itemize}
 
-\textbf{Végrehajtás (execution)}
+\textbf{Kivitelezés (Execution)}
 \begin{itemize}
 \item Kódolás
 \item Kész egységek tesztelése
@@ -39,29 +39,35 @@ A programom tervezése során több aspketust vettem figyelembe. Elsődleges sze
 \item Folyamatfejlesztések
 \end{itemize}
 
-\textbf{Zárás (closure)}
+\textbf{Zárás (Closure)}
 \begin{itemize}
 \item Az elkészült termék üzembe helyezése
 \item Felhasználói kézikönyv
 \item Végső tesztelés
 \end{itemize}
 
+
 \section{Felhasznált technológiák}
 
+A webfejlesztés számos szabályt és technikát tartalmaz, amelyeket minden webhelyfejlesztőnek tudnia kell. Mivel a számítógépek nem tudnak egymással úgy kommunikálni, mint az emberek, helyettük kódokra van szükségük. Egy progresszív webalkalmazás rendelkezik mind a webhely, mind a helyileg telepített program jellemzőivel, továbbá a modern alkalmazások új lehetőségeivel.
+
 \subsection{HTML5}
-Mivel a programom online felületre lett tervezve, annak szerkezeti felépítése HTML-ben íródott. A HTML azaz Hypertext Markup Language, magyarul hipertext jelölő nyelv, egy leíró nyelv, amely egy weblap felépítését specifikálja az internetes böngészők felé. Ahogy nevében is láthatjuk, nem egy programozási nyelv, amely azt jelenti, hogy nem programozási logikák megírására, vagy adatok kezelésére használjuk, hanem különböző utasításokkal meghatározzuk az oldalunk struktúráját. \\
+Mivel a programom online felületre lett tervezve, annak szerkezeti felépítése HTML-ben íródott. A HTML (HyperText Markup Language), magyarul hipertext jelölő nyelv, egy leíró nyelv, amely egy weblap felépítését specifikálja az internetes böngészők felé. Ahogy nevében is láthatjuk, nem egy programozási nyelv, amely azt jelenti, hogy nem programozási logikák megírására, vagy adatok kezelésére használjuk, hanem különböző utasításokkal meghatározzuk az oldalunk struktúráját. A webböngészők HTML dokumentumokat fogadnak egy webszerverről vagy helyi tárolóról, és a dokumentumokat multimédiás weboldalakká alakítják . A HTML szemantikailag írja le a weboldal szerkezetét, és  a megjelenésére utaló jeleket (\aref{fig:htmlExample}) \\
 
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.8]{images/htmlExample.png}
 \caption{HTML felépítés és elemek megjelenítése}
+\label{fig:htmlExample}
 \end{figure}
+
+\pagebreak
 
 \subsubsection{HTML Canvas} 
 
-Canvas elem a HTML5 része és lehetővé teszi két dimenziós alakzatok és dinamikus bittérképek megjelenítését. Több elterjedt 2D API-khoz hasonló rajzfunkciók teljes készletén keresztül érheti el a felhasználni kívánt területet, ezzel elérhetővé téve a dinamikusan generált grafikákat. Főbb felhasználási területe: grafikonok, animációk, játékok és képalkotás.
+A Canvas elem a HTML5 része, és lehetővé teszi két dimenziós alakzatok és dinamikus bittérképek megjelenítését. Több elterjedt 2D API-khoz hasonló rajzfunkciók teljes készletén keresztül érheti el a felhasználni kívánt területet, ezzel elérhetővé téve a dinamikusan generált grafikákat. Főbb felhasználási területe: grafikonok, animációk, játékok és képalkotás.
 
-Mivel grafikonok megvalósításához elengedhetetlen, ezért az én applikációm részét is képezi. A Canvas elem a következőképpen épül fel:
+Mivel a grafikonok megvalósításához elengedhetetlen, ezért az én applikációm részét is képezi. A Canvas elemre láthatunk egy példát a 3.2 ábrán:
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.7]{images/canvasExample.png}
@@ -70,16 +76,19 @@ Mivel grafikonok megvalósításához elengedhetetlen, ezért az én applikáci�
 
 \subsection{CSS}
 
-Ahhoz, hogy a HTML által definiált oldalunkon megjelenjenek a kívánt elemek és ezeket jól olvashatóan és igényesen tudjuk megformázni, szükségünk van egy olyan nyelvre, ami a HTML elemekre tud hivatkozni, és különböző nézeti tulajdonságokat tud neki átadni. Ezen célra alkalmas a CSS azaz Cascading Style Sheets, magyarul lépcsőzetes stíluslapok, egy leíró nyelv, amely a HTML elemek megjelenítését, azok stílusát (például: elhelyezkedés, betűszín, karakter formátumok stb.) írj a le a böngésző számára. 
+Ahhoz, hogy a HTML által definiált oldalunkon megjelenjenek a kívánt elemek és ezeket jól olvashatóan és igényesen tudjuk megformázni, szükségünk van egy olyan nyelvre, ami a HTML elemekre tud hivatkozni, és különböző nézeti tulajdonságokat tud neki átadni. Ezen célra alkalmas a CSS  (Cascading Style Sheets), magyarul lépcsőzetes stíluslapok, egy leíró nyelv, amely a HTML elemek megjelenítését, azok stílusát (például: elhelyezkedés, betűszín, karakter formátumok stb.) írj a le a böngésző számára. 
 
-	Különböző választókkal jelölhetünk ki elemeket, azok nevére, osztályára vagy típusára hivatkozva. A lépcsőzetesség arra utal, hogy mely választók vannak priorizálva a weblap megjelenítésének szempontjából. Ez fontos, hisz összetett weblapok esetén többszáz CSS szabály is használatban lehet. \newline
-	CSS stílusokat megadhatunk különféle eljárások szerint. \aref{fig:css} \\
+	Különböző választókkal jelölhetünk ki elemeket, azok nevére, osztályára vagy típusára hivatkozva. A lépcsőzetesség arra utal, hogy mely választók vannak priorizálva a weblap megjelenítésének szempontjából. Ez fontos, hisz összetett weblapok esetén többszáz CSS szabály is használatban lehet. \\
 
-	Közvetlenül egy HTML elemen keresztül pontosvesszőkkel elválasztva. Ezt a változatot \emph{sorközi stílus}nak (inline CSS) nevezzük. \\
-
-	Használhatjuk \emph{belső stílus}ként (internal CSS), amely egyedi kinézetet biztosít egyetlen dokumentumhoz. A HTML <head> részében kell meghatározni <style> címkén belül. \\
-
-	Szakmailag legelterjedtebb felhasználása a \emph{külső stílus} (external CSS). A külső stíluslapot általában akkor használjuk, ha több oldalon szeretnénk változtatni. Ideális erre az állapotra, mert megkönnyíti a teljes webhely megjelenésének megváltoztatását egyetlen fájl módosításával. Fejrészen belül elhelyezzük <link> címkék közé a külső fájl forrását, amiben a kódunk szerepel.
+\pagebreak
+	CSS stílusokat megadhatunk különféle eljárások szerint (\aref{fig:css}). \\
+\begin{itemize}
+\item Közvetlenül egy HTML elemen keresztül pontosvesszőkkel elválasztva. Ezt a változatot \emph{sorközi stílus}nak (inline CSS) nevezzük.
+\item Használhatjuk \emph{belső stílus}ként (internal CSS), amely egyedi kinézetet biztosít 
+egyetlen dokumentumhoz. A HTML <head> részében kell meghatározni \\
+<style> címkén belül.
+\item Szakmailag legelterjedtebb felhasználása a \emph{külső stílus} (external CSS). A külső stíluslapot általában akkor használjuk, ha több oldalon szeretnénk változtatni. Ideális erre az állapotra, mert megkönnyíti a teljes webhely megjelenésének megváltoztatását egyetlen fájl módosításával. Fejrészen belül elhelyezzük <link> címkék közé a külső fájl forrását, amiben a kódunk szerepel.
+\end{itemize}
 
 \begin{figure}[h]
 \centering
@@ -90,77 +99,84 @@ Ahhoz, hogy a HTML által definiált oldalunkon megjelenjenek a kívánt elemek 
 
 \subsubsection{Bootstrap5}
 
-A Bootstrap egy ingyenes, nyílt forráskódú frontend fejlesztői keretrendszer webhelyek és webes alkalmazások létrehozásához. Úgy tervezték, hogy lehetővé tegye a webhelyek reszponzív fejlesztését , és a Bootstrap szintaxis gyűjteményt biztosít a sablontervekhez, így a fejlesztőknek csak be kell illeszteni a kódot egy előre meghatározott CSS-keretrendszerbe (grid). Ez a rendszer 12 oszlopos rácsrendszert használ, ezáltal egy reszponzív weboldalt több módon egyenletesen lehet felosztani, ahogy az eszköz nézete megváltozik különféle felbontásban. \cite{Bootstrap}
+A Bootstrap egy ingyenes, nyílt forráskódú frontend fejlesztői keretrendszer webhelyek és webes alkalmazások létrehozásához. Úgy tervezték, hogy lehetővé tegye a webhelyek reszponzív fejlesztését, és a Bootstrap szintaxis gyűjteményt biztosít a sablontervekhez, így a fejlesztőknek csak be kell illeszteni a kódot egy előre meghatározott CSS-keretrendszerbe (grid). Ez a rendszer 12 oszlopos rácsrendszert használ, ezáltal egy reszponzív weboldalt több módon egyenletesen lehet felosztani, ahogy az eszköz nézete megváltozik különféle felbontásban (\aref{fig:bootstrap}).
 
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.5]{images/bootstrap.png}
-\caption{Bootstrap beillesztése HTML dokumentumban és rácsrendszer felosztása }
+\caption{Bootstrap beillesztése HTML dokumentumban és rácsrendszer felosztása (Forrás: \cite{Bootstrap})}
+\label{fig:bootstrap}
 \end{figure}
+
+\pagebreak
 
 \paragraph{Rácsrendszer:}
 
-A rácsrendszerek olyan segédeszközök, amelyeket a tervezők a nehezen átlátható weboldalak megoldásaként valósították meg, hogy az információk rendezettek legyenek és következetes felhasználói élményt biztosítsanak a felhasználók számára. Logikáját tekintve szakított az informatikában gyakran használt decimális számokkal, mivel ezen számokat nem lehet felezni, harmadolni, úgy, hogy egész számokat kapjunk. Így merült fel az a meglátás, miszerint a tároló konténert 12 egyenlő részre osztja fel. Szabadon beállíthatjuk az adott sor(ok), vagy oszlop(ok) milyen szélességgel rendelkezzenek, esetleg a tároló kontéren mekkora részének feleljen meg a képernyőn.
+A rácsrendszerek olyan segédeszközök, amelyeket a tervezők a nehezen átlátható weboldalak megoldásaként valósították meg, hogy az információk rendezettek legyenek és következetes felhasználói élményt biztosítsanak a felhasználók számára. Logikáját tekintve szakított az informatikában gyakran használt decimális számokkal, mivel ezen számokat nem lehet felezni, harmadolni, úgy, hogy egész számokat kapjunk. Így merült fel az a meglátás, miszerint a tároló konténert 12 egyenlő részre osztja fel. Szabadon beállíthatjuk az adott sor(ok), vagy oszlop(ok) milyen szélességgel rendelkezzenek, esetleg a tároló kontéren mekkora részének feleljen meg a képernyőn (\aref{fig:gridSystem}).
 
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.4]{images/gridSystem.png}
 \caption{12 oszlopos rácsrendszer felosztása (forrás: \cite{gridSystem})}
+\label{fig:gridSystem}
 \end{figure}
 
 \subsubsection{Font Awsome}
 
 A legegyszerűbb módja annak, hogy figyelemfelkeltő ikonokat helyezzünk el weboldalunkon, ha ikon készletet használunk. Én a Font Awsome internetes ikonkönyvtárát és eszközkészletét használtam fel.
 
-\subsection{NodeJS }
+\subsection{Node.js}
 
-A Node.js egy nyílt forráskódú, többplatformos futási környezet, amiben a gépünkön JavaScript kódot tudunk végrehajtani. Széles körben alkalmazzák szerveroldali programozáshoz, így a fejlesztők használhatják a JavaScriptet kliensoldali és szerveroldali kódokhoz anélkül, hogy további nyelvet kellene megtanulniuk. Általában egy bizonyos címen és porton figyel az szerver, és mikor kérést kap, elvégzi a leprogramozott funkciókat, majd tétlen állapotban várakozik a következő hívásig. Mivel a Node.js nem folytat közvetlenül kimeneti, vagy bementi műveleteket, így erőforrások blokkolása nem merül fel, ezáltal nem kell félni, hogy a program elakad. Tehát a Node.js ideális interaktív megjelenítő alkalmazások fejlesztésére. \cite{nodeJS}
+A Node.js egy nyílt forráskódú, többplatformos futási környezet, amiben a gépünkön JavaScript kódot tudunk végrehajtani. Széles körben alkalmazzák szerveroldali programozáshoz, így a fejlesztők használhatják a JavaScriptet kliensoldali és szerveroldali kódokhoz anélkül, hogy további nyelvet kellene megtanulniuk. Általában egy bizonyos címen és porton figyel a szerver, és mikor kérést kap, elvégzi a leprogramozott funkciókat, majd tétlen állapotban várakozik a következő hívásig. Mivel a Node.js nem folytat közvetlenül kimeneti, vagy bementi műveleteket, így erőforrások blokkolása nem merül fel, ezáltal nem kell félni, hogy a program elakad. Tehát a Node.js ideális interaktív megjelenítő alkalmazások fejlesztésére. \cite{nodeJS}
 
 \subsubsection{Node Package Manager}
 
-A Node.js futtatásához Node Package Manager (NPM), azaz Node Csomagkezelőt alkalmazunk. Az NPM egy nyílvántartott adatbázis, amelyben szotfverek és a hozzájuk található metaadtok szerepelnek. Három részre lehet felosztani, úgy mint weboldal kezelés, parancssori felület és nyilvántartás.
+A Node.js futtatásához Node Package Manager (NPM), azaz Node Csomagkezelőt alkalmazunk. Az NPM egy nyilvántartott adatbázis, amelyben szotfverek és a hozzájuk található metaadtok szerepelnek. Három részre lehet felosztani, úgy mint weboldal kezelés, parancssori felület és nyilvántartás.
 
 \subsubsection{Express.JS}
 
-Az Express.js egy Node.js backend keretrendszer, amelyet arra terveztek, hogy az API webalkalmazásait gyorsan és platformokon átívelő almazásokat készítsen, és megkönnyítse a node js-t dolgát. Webes alkalmazások és RESTful API-k építésére tervezték anélkül, hogy bármiben is korlátozná a szerver funkcióit.
+Az Express.js egy Node.js backend keretrendszer, amelyet arra terveztek, hogy az API webalkalmazásait gyorsan és platformokon átívelő almazásokat készítsen, és megkönnyítse a node.js-t dolgát. Webes alkalmazások és RESTful API-k építésére tervezték anélkül, hogy bármiben is korlátozná a szerver funkcióit.
 
 \subsection{JavaScript}
 
 A JavaScript, amelyet gyakran JS-ként is szoktak említeni, egy olyan többparadigmás, dinamikus programozási nyelv, ami lehetővé teszi, hogy a weblapokon komplex funkciókat valósíthassunk meg HTML és CSS használatával. A webhelyek majdnem 100\%-a JavaScriptet használ az elsőrendű függvényeivel, továbbá az alacsony erőforrásigényével. Támogatja a prototípus-alapú objektumorientációval és első osztályú funkciókkal rendelkező kódolást, továbbá az eseményvezérelt, funkcionális és kötelező programozási stílusokat. 
 
-Működését tekintve, nem típusos nyelv, így nem szükséges a változókat deklarálni használat előtt, a megfelelő típust futás közben veszi fel. A JavaScriptet támogató böngésző betölti a HTML oldalt, amennyiben script kód található benne a JavaScript elemző motor kerül előtérbe és a script kód betöltődik. Alkalmazásprogramozási felületekkel (API-kkal) rendelkezik a szöveggel, dátumokkal, reguláris kifejezésekkel való munkához. A legnépszerűbb futásidejű rendszer erre a felhasználásra a Node.js. \\
-(Bár a Java és a JavaScript nevüket és szintaxisukat tekintve hasonlóak, a két nyelv különbözik, és nagymértékben eltér egymástól.)  \cite{wikiJS}
-
+Működését tekintve, nem típusos nyelv, így nem szükséges a változókat deklarálni használat előtt, a megfelelő típust futás közben veszi fel. A JavaScriptet támogató böngésző betölti a HTML oldalt, amennyiben kód található benne a JavaScript elemző motor kerül előtérbe és a script kód betöltődik. Alkalmazásprogramozási felületekkel (API-kkal) rendelkezik a szöveggel, dátumokkal, reguláris kifejezésekkel való munkához. A legnépszerűbb futásidejű rendszer erre a felhasználásra a Node.js. (Bár a Java és a JavaScript nevüket és szintaxisukat tekintve hasonlóak, a két nyelv különbözik, és nagymértékben eltér egymástól.)  \cite{wikiJS}
 
 \subsubsection{JQuery}
 
 A jQuery egy nyílt forráskódú, gazdag JavaScript-keretrendszer, amely leegyszerűsíti a HTML/CSS-dokumentumok, pontosabban a Dokumentum Objektum Model (DOM) és a JavaScript közötti interakciókat. Szintaxisát úgy tervezték, hogy megkönnyítse a dokumentumban való navigálást, kezelést, a DOM- elemek kiválasztását, az animációk létrehozását, az események kezelését és az Aszinkron JavaScript XML (Ajax)- alkalmazások fejlesztését.
 
-	 A jQuery lehetőséget biztosít, a fejlesztők számára, hogy absztrakciókat hozzanak létre alacsony szintű interakcióhoz és animációhoz, fejlett effektusokhoz és magas szintű, témára alkalmas widgetekhez. A könyvtár moduláris megközelítése lehetővé teszi hatékony dinamikus weboldalak és webalkalmazások létrehozását. \\
+	 A jQuery lehetőséget biztosít, a fejlesztők számára, hogy absztrakciókat hozzanak létre alacsony szintű interakcióhoz és animációhoz, fejlett effektusokhoz és magas szintű, témára alkalmas widgethez. A könyvtár moduláris megközelítése lehetővé teszi hatékony dinamikus weboldalak és webalkalmazások létrehozását. \\
 
 \subsubsection{JSON}
 
-A JavaScript Objektum Jelölés (JSON) egy nyílt szabványos,  nyelvtől független fájlformátum és adatcsere -formátum, amely ember által olvasható szöveget használ az adatobjektumok tárolására és továbbítására. Nagyon elterjedt adatformátum, amelyet sokrétűen alkalmaznak az elektronikus adatcserében, beleértve az adatcserét webes alkalmazások és szerverek között. A JSON két struktúrára épül: \\
+A JavaScript Objektum Jelölés (JSON) egy nyílt szabványos,  nyelvtől független fájlformátum és adatcsere-formátum, amely ember által olvasható szöveget használ az adatobjektumok tárolására és továbbítására. Nagyon elterjedt adatformátum, amelyet sokrétűen alkalmaznak az elektronikus adatcserében, beleértve az adatcserét webes alkalmazások és szerverek között. A JSON szerkezete a következőképpen épül fel: \\
 
-Név - érték párok gyűjteménye. Különböző nyelveken ez objektumként , rekordként, struktúraként, szótárként, hash-táblaként, kulcsos listaként vagy asszociatív tömbként valósul meg .Az értékek listája rendezett. Ezen értékek lehetnek, sztringek, számok,  másik JSON, tömbök, vagy boolean értékek. A .json fájlnevet ezen objektumok kiterjesztésére használják, nem csak JavaScript programozási nyelven íródott kódokra is. \\
+\begin{itemize}
+\item Név - érték párok gyűjteménye. Különböző nyelveken ez objektumként, rekordként, struktúraként, szótárként, hash-táblaként, kulcsos listaként vagy asszociatív tömbként valósul meg.
+\item Az értékek listája rendezett. 
+\item Ezen értékek lehetnek, sztringek, számok,  másik JSON, tömbök, vagy boolean értékek (\aref{fig:jsonExample}).
+\end{itemize}
+
+A .json fájlnevet ezen objektumok kiterjesztésére használják, nem csak JavaScript programozási nyelven íródott kódokra is.
 
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.9]{images/jsonExample.png}
 \caption{Egy alkalmazott adatai JSON-ként tárolva }
+\label{fig:jsonExample}
 \end{figure}
 
+\section{Chart.js bemutatása}
 
-\section{Miért a Chart.JS? }
-
-\subsection{ChartJS bemutatása}
-
-A Chart.js egy ingyenes, nyílt forráskódú JavaScript-könyvtár adatvizualizációhoz , amely nyolc diagramtípust támogat : vonal, oszlop, terület, torta ( fánk ), buborék, radar, poláris és szórt diagram. JavaScript nyelven használt beépülő modulokat, diagramtípusokat és testreszabási lehetőségeket kínál. A számtalan beépített modul mellett, a közösség által karbantartott diagramtípusokat is elérhetővé tesz. Ezen felül több diagramtípus kombinálható vegyes diagrammá ugyan azon a Canvas elemen belül. \cite{ChartJS}
+A Chart.js egy ingyenes, nyílt forráskódú JavaScript-könyvtár adatvizualizációhoz , amely nyolc diagramtípust támogat : vonal, oszlop, terület, torta ( fánk ), buborék, radar, poláris és szórt diagram. JavaScript nyelven használt beépülő modulokat, diagramtípusokat és testreszabási lehetőségeket kínál (\aref{fig:chartExample}). A számtalan beépített modul mellett, a közösség által karbantartott diagramtípusokat is elérhetővé tesz. Ezen felül több diagramtípus kombinálható vegyes diagrammá ugyan azon a Canvas elemen belül. \cite{ChartJS}
 
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.6]{images/chartExample.png}
 \caption{diagram létrehozása JSON formátumban (forrás: \cite{ChartJS})}
+\label{fig:chartExample}
 \end{figure}
 
 \begin{figure}[h]
@@ -169,23 +185,24 @@ A Chart.js egy ingyenes, nyílt forráskódú JavaScript-könyvtár adatvizualiz
 \caption{Oszlopdiagram ami szavazatok számát mutatja meg (forrás: \cite{ChartJS})}
 \end{figure}
 
-\subsection{ChartJS összehasonlítása más grafikus könyvtárakkal}
+\pagebreak
 
-\subsubsection{Chart.JS összehasonlítása D3.JS keretrendszerrel}
+\subsection{Chart.js összehasonlítása D3.JS keretrendszerrel}
+
 A csillagok száma alapján a GitHubon a második legnépszerűbb JavaScript diagramkönyvtár a D3.js után, amelyet ugyan lényegesen könnyebben kezelhetőnek tartanak, de kevésbé egyéni igényeket kiszolgáló, mint az utóbbi. A Chart.js HTML5 Canvas elemen belül jelenik meg, és széles körben elismert, mint az egyik legjobb adatvizualizációs könyvtár.
 A Chart.js nagymértékben testreszabható, hogy néhányat említsek: egyéni beépülő modulokkal, amelyek segítségével megjegyzéseket, nagyítást vagy húzással hozhat létre.
 
-	A Chart.js a diagramelemeket HTML5 Canvas jeleníti meg, ellentétben számos más, többnyire D3.js-alapú diagramkönyvtárral, amelyek Skálázható Vektor Grafika (SVG)-ként jelennek meg. A Canvas megjelenítés nagyon hatékonyvá teszi a Chart.js-t, különösen nagy adatkészletek és összetett vizualizációk esetén, amelyek egyébként több ezer SVG-csomópontot igényelnének a DOM-fában. Ugyanakkor a Canvas renderelés nem engedélyezi a CSS stílust, ezért ehhez beépített opciókat kell használni, vagy különböző diagramtípusokaz kell létrehozni, hogy a kívánt gráfok jelenjenek meg. 
+	A Chart.js a diagramelemeket HTML5 Canvas elemek jelenítik meg, ellentétben számos más, többnyire D3.js-alapú diagramkönyvtárral, amelyek Skálázható Vektor Grafika (SVG)-ként jelennek meg. A Canvas megjelenítés nagyon hatékonyvá teszi a Chart.js-t, különösen nagy adatkészletek és összetett vizualizációk esetén, amelyek egyébként több ezer SVG-csomópontot igényelnének a DOM-fában. Ugyanakkor a Canvas renderelés nem engedélyezi a CSS stílust, ezért ehhez beépített opciókat kell használni, vagy különböző diagramtípusokat kell létrehozni, hogy a kívánt gráfok jelenjenek meg. 
 
 	A Chart.js nagyon jól alkalmazható nagy adathalmazokhoz. Az ilyen adatkészletek hatékonyan feldolgozhatóak belső formátum működtetésével, így eredményes az adatok elemzéséhez és normalizálásához. Végül a Chart.js által kezelt Canvas megjelenítés csökkenti a DOM-fájának terhelését, míg az SVG-megjelenítéshez nagyon erőforrás igényes tud lenni. \cite{wikiChart}
 
 \pagebreak
 
-\paragraph{ChartJS előnyei}
+\paragraph{Chart.js előnyei}
 
 \begin{itemize}
 \item Mivel a Chart.js egy JavaScript könyvtár, így lehetővé teszi, hogy bármilyen választott JS keretrendszerrel dolgozzunk, mint például az Angular.js vagy a React.js.
-\item Használata könnyű és minimális fejlesztési ismeretet igényel.
+\item Használata könnyű és minimális fejlesztői ismeretet igényel.
 \item Nyílt forráskódú, így csak a meglévő könyvtárat kell igénybe venni és nem a fejlesztőnek kell mindent felépíteni.
 \item World Wibe Web Consortion (W3C) szabványt követi, így nincs szükség más böngészőhöz tartozó technológiára, vagy bővítményre.
 \item Több megjelenítő eszközzel ellentétben 8 féle diagram megjelenítését engedélyezi.

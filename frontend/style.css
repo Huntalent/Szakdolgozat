@@ -1491,6 +1491,9 @@ input[class="form-control"] {
         display: inline;
     }
 
+#pagesRow {
+    margin-top: 100px;
+}
 }
 
 @media (max-width: 767px) {
@@ -1498,10 +1501,13 @@ input[class="form-control"] {
         margin-top: 0;
     }
 
-    #pages {
-        padding-top: 90px;
-    }
+#investRow {
+    margin-top: 100px;
+}
 
+#pagesRow {
+    margin-top: 40px;
+}
     #graph-invests {
         font-size: 16px;
         margin-left: 30px;

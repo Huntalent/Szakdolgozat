@@ -1,32 +1,27 @@
 \Chapter{Alkalmazás bemutatása}
 
+Az alábbi fejezetben az alkalmazást fogom részletesen ismertetni a felhasználóval. Először a szerkezeti felépítését fogom bemutatni, majd kitérek minden fontosabb oldalra és a kiegészítő elemekre. Miután prezentáltam a weboldalt áttekintem miért lettek implementálva a különféle funkciók, illetve kitérek arra, hogy milyen fejlesztési lehetőségek elérhetőek a jövőben.
+
 \section{Alkalmazás felépítése}
 
-Az alkalmazást úgy építettem fel, hogy a látogató elsőként a Kezdőlapon találja magát. Innen lehetősége van a további három másik főoldal bármelyikére kalauzolnia magát, amennyiben szeretné. A weboldal fő eleme a Grafikonrajzoló oldal, viszont az oda vezető út nem biztos, hogy teljesen egyenes. Több dologgal is keresztezheti a böngészést, például:
-
-\begin{verbatim}
-- Meglátja az "Ajánlataink" részt, ami felkelti az érdeklődését,ezáltal 
-  elkezd utána olvasni.
-- Úgy érzi nem megfelelő az eddigi tapasztalata, amit a "Befektetések" 
-  oldalon szeretné kamatoztatni.
-\end{verbatim}
+Az alkalmazást úgy építettem fel, hogy a látogató elsőként a Kezdőlapon találja magát. Innen lehetősége van a további három másik főoldal bármelyikére kalauzolnia magát, amennyiben szeretné (\aref{fig:draw}).
 
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.5]{images/flowchart.png}
-\caption{Alkalmazás folyamatábrája (Forrás: \cite{draw})}
+\caption{Alkalmazás állapotdiagramja (Forrás: \cite{draw})}
 \label{fig:draw}
 \end{figure}
 
 \section{Alkalmazás panelei}
 
-Az alkalmazás megalkotásánál az alapvető tézisem az volt, hogy tudásom legjavát  megjelenítéssel és funkcionalitással szeretném kifejezni. Piackutatásaim során sokat ihletődtem különböző grafikonrajzoló weboldalakról, főként abból a szempontból, hogy milyen paneleket és oldalakat érdemes megalkotni. Következésképpen a szoftver struktúráját négy fő oldalra és hat aloldalra terveztem meg.\cite{Aegon} A főbb oldalak a következőek: 
+Az alkalmazás megalkotásánál az alapvető szemléletem az volt, hogy szaktudásomat megjelenítéssel és funkcionalitással szeretném prezentálni. Piackutatásaim során sokat inspirálódtam különböző grafikonrajzoló weboldalakról, főként abból a szempontból, hogy milyen paneleket és oldalakat érdemes megalkotni. Következésképpen a szoftver struktúráját négy fő oldalra és hat aloldalra terveztem meg.\cite{Aegon} A főbb oldalak a következőek: 
 
 \begin{itemize}
-\item \textbf{Kezdőlap}
-\item \textbf{Grafikonrajzoló}
-\item \textbf{Befektetések}
-\item \textbf{Kapcsolat}
+\item \textbf{Kezdőlap},
+\item \textbf{Grafikonrajzoló},
+\item \textbf{Befektetések},
+\item \textbf{Kapcsolat}.
 \end{itemize}
 
 \subsection{Kezdőlap}
@@ -64,12 +59,12 @@ Végül a tőzsdei árfolyamok következnek amiket szintén ismertettem a másod
 A Befektetések oldalnak a fő paradigmája az információ közlése és ismertetése. Az \textbf{Az Elméleti háttér} fejezetben már taglaltam, hogy a tőzsde és a befektetések elrettentő szavak azon személyeknek akiknek nincs átfogó gazdasági szakértelme, így ez az oldal azt a célt szolgálja, hogy bárki tudását gyarapíthassa. Jelenleg az oldalamon hat különböző befektetés elérhető, mindegyik befektetéshez külön aloldal tartozik, ahol részletes leírás, táblázat és éves nettó értékelés is található. Felépítését tekintve, hogy jobban meglehessen őket jegyezni mindegyik befektetés kapott saját borítóképet és fantázia nevet. A befektetések leírása általam készített kreáció amiket a fő inspirációként szolgáló \textbf{Aegon Biztosító Zrt.} hivatalos weboldaláról szereztem \cite{Aegon}. Mindegyik befektetés adathalmaza valós részvények adatait képezik, mint például a \emph{Tempó 2 Andante} alaphoz a Google részvényein alapszik. Ezen adatokat a már korábban említett EOD oldalról gyűjtöttem össze API hívásokat alkalmazva. \cite{eod} 
 A Befektetések oldalon található hat befektetési alap:
 \begin{itemize}
-\item \textbf{Tempó 2 Andante (Alacsony kockázatú befektetés)}
-\item \textbf{Tempó 5 Moderato (Közepes kockázatú befektetés)}
-\item \textbf{Tempó 8 Allegro (Magas kockázatú befektetés)}
-\item \textbf{Abszolút hozamú befektetési alap (Családi csomag)}
-\item \textbf{Feltörekvő Európa Kötvény befektetési alap (Európai portfólió)}
-\item \textbf{Megatrend Részvény befektetési alap (Megújuló energia)} \cite{Aegon}
+\item \textbf{Tempó 2 Andante (Alacsony kockázatú befektetés)},
+\item \textbf{Tempó 5 Moderato (Közepes kockázatú befektetés)},
+\item \textbf{Tempó 8 Allegro (Magas kockázatú befektetés)},
+\item \textbf{Abszolút hozamú befektetési alap (Családi csomag)},
+\item \textbf{Feltörekvő Európa Kötvény befektetési alap (Európai portfólió)},
+\item \textbf{Megatrend Részvény befektetési alap (Megújuló energia)}. \cite{Aegon}
 \end{itemize}
 
 \begin{figure}[h]
@@ -80,9 +75,9 @@ A Befektetések oldalon található hat befektetési alap:
 
 \subsection{Kapcsolat}
 
-Amikor a fejlesztési stratégiám még a tervezési fázisban \aref{fig:planning} járt, akkor nem fordítottam nagyobb figyelmet erre a panelre, mert nem tartottam fontosnak. Viszont a konzulensem által is erősen javasolt piackutatási folyamat során meglepő információra bukkantam. A legtöbb blogban és elemzésben elengedhetetlen elemnek tartják a \textbf{Kapcsolat} oldalt. "A kapcsolati adatok könnyű megtalálása az egyik legfontosabb dolog, hogy a weboldalad megbízhatóvá váljon. Az email, telefon vagy élő chat elérésedet helyezd el minden aloldalon."  \cite{contact}. Tehát kétség sem fér hozzá, hogy az oldal kötelező eleme legyen az alkalmazásomnak, viszont felmerült bennem a kérdés, hogy mégis milyen módon állítsam össze? 
+Amikor a fejlesztési stratégiám még a tervezési fázisban (\aref{fig:planning}) járt, akkor nem fordítottam nagyobb figyelmet erre a panelre, mert nem tartottam fontosnak. Viszont a konzulensem által is erősen javasolt piackutatási folyamat során meglepő információra bukkantam. A legtöbb blogban és elemzésben elengedhetetlen elemnek tartják a \textbf{Kapcsolat} oldalt. "A kapcsolati adatok könnyű megtalálása az egyik legfontosabb dolog, hogy a weboldalad megbízhatóvá váljon. Az email, telefon vagy élő chat elérésedet helyezd el minden aloldalon."  \cite{contact}. Tehát kétség sem fér hozzá, hogy az oldal kötelező eleme legyen az alkalmazásomnak, viszont felmerült bennem a kérdés, hogy mégis milyen módon állítsam össze? 
 
-	Nos erre a kérdésre hamar megtaláltam a választ, a Kapcsolat oldal kivitelezését aszerint fogom megalkotni, mint ahogy egy felhasználó elvárná. Elsőként kiválasztottam egy figyelemfelkeltő és megragadó képet ami egyértelműen szimbolizálja milyen elemek találhatóak. Továbbiakban arra fókuszáltam, hogy a látogató számára minden olyan szükséges metaadatok \aref{fig:contact} jelenjenek meg amivel kapcsolatba lehet lépni velem. A Kapcsolat címmel ellátott blokkban megadtam a "Fő iroda" adatait, amiket a Font Awsome által kiválasztott ismerős ikonokkal jeleztem. Kiegészítettem még egy beszúrt élő Google térképpel, ami az iroda "központját" célszerű mutatni, illetve elhelyeztem még egy üzenet küldő formot, ha bármilyen kérdés felmerülne a felhasználóban.
+	Nos erre a kérdésre hamar megtaláltam a választ, a Kapcsolat oldal kivitelezését aszerint fogom megalkotni, mint ahogy egy felhasználó elvárná. Elsőként kiválasztottam egy figyelemfelkeltő és megragadó képet ami egyértelműen szimbolizálja milyen elemek találhatóak. Továbbiakban arra fókuszáltam, hogy a látogató számára minden olyan szükséges metaadatok (\aref{fig:contact}) jelenjenek meg amivel kapcsolatba lehet lépni velem. A Kapcsolat címmel ellátott blokkban megadtam a "Fő iroda" adatait, amiket a Font Awsome által kiválasztott ismerős ikonokkal jeleztem. Kiegészítettem még egy beszúrt élő Google térképpel, ami az iroda "központját" célszerű mutatni, illetve elhelyeztem még egy üzenet küldő formot, ha bármilyen kérdés felmerülne a felhasználóban.
 
 \begin{figure}[h]
 \centering
@@ -92,15 +87,15 @@ Amikor a fejlesztési stratégiám még a tervezési fázisban \aref{fig:plannin
 \end{figure}
 
 
-\subsection{Dizájn megtervezése}
+\subsection{Design megtervezése}
 
-Először felmértem, hogy mely oldalak lesznek a weboldalam legfontosabb elemei, majd úgy alakítottam ki a szerkezetüket, hogy egységesen passzoljon mindegyikre. Témának zöldes-kékes színvilágot választottam, ezért lett égszínkék a háttérszín. A szövegek színe megmaradt a fekete és annak árnyalatainak, mint például: \emph{\#222} rgb kódú világosabb feketeszín. Továbbá a gombok és feliratok zöldes színt kaptak, amihez a leggyakrabban használt \emph{\#088178} rgb kódú látványt használtam.
+Először felmértem, hogy mely oldalak lesznek a weboldalam legfontosabb elemei, majd úgy alakítottam ki a szerkezetüket, hogy egységesen passzoljon mindegyikre. Témának zöldes-kékes színvilágot választottam, ezért lett égszínkék a háttérszín. A szövegek színe megmaradt a fekete és annak árnyalatainak, mint például: \emph{\#222} RGB kódú világosabb feketeszín. Továbbá a gombok és feliratok zöldes színt kaptak, amihez a leggyakrabban használt \emph{\#088178} RGB kódú látványt használtam.
 
 \subsection{Navigáció}
 
 A navigációt úgy terveztem meg, hogy a fő oldalak között bármikor lehessen általa váltani. Mindig a képernyő tetején helyezkedik el és követi annak mozgatását, így a navigálás felhasználó barát és könnyed. Ha a képernyő pikszel mérete kisebb a monitorénál, akkor vízszintes helyezkedését függőleges váltja fel, amit egy gomb megnyomásával lehet előhozni és elrejteni.
 
-	A weboldalakon kétféle menürendszer használatos: vízszintes és függőleges \aref{fig:navbar}. 
+	A weboldalakon kétféle menürendszer használatos: vízszintes és függőleges. (\aref{fig:navbar})
 
 \begin{figure}[h]
 \centering
@@ -125,11 +120,13 @@ A logó az alkalmazás bal oldalán helyezkedik el, mind a navigációs sávon, 
 
 \section{Alkalmazás áttekintése}
 
+Ebben a szekvenciában szubjektív módon szeretném bemutatni, mi indokolta a weboldalam létrejöttét. Olyan szempontokat fogok felsorolni amik az én alkalmazásomban megtalálhatóak, de más általam felmért weboldalakban hiányoltam.
+
 \subsection{Más oldalakkal összehasonlítás}
 
-Ebben a szekvenciában szubjektív módon szeretném bemutatni, mi indokolta a weboldalam létrejöttét. Olyan szempontokat fogok felsorolni amik az én alkalmazásomban megtalálhatóak, de más általam felmért weboldalakban hiányoltam. Ahogy már említettem a lista teljesen szubjektív és az oldalon található funkciókat szeretném megindokolni, hogy miért lettek lefejlesztve és mi volt velük a célom. \\
+Ahogy már említettem a lista teljesen szubjektív és az oldalon található funkciókat szeretném megindokolni, hogy miért lettek lefejlesztve és mi volt velük a célom. \\
 
-\textbf{Ami az én oldalalom megtalálható és más oldalon nem}:
+\textbf{Ami az én oldalalom megtalálható}:
 
 \begin{itemize}
 \item Könnyű navigálás, hiszen a főoldalról is elérhető bármelyik oldal, illetve a navigációs sáv követi a képernyő mozgását. 
@@ -138,16 +135,16 @@ Ebben a szekvenciában szubjektív módon szeretném bemutatni, mi indokolta a w
 \item Többféle árfolyam is választható.
 \end{itemize}
 
-\textbf{Ami az én oldalalom nem találjató meg, de más oldalon igen}:
+\textbf{Ami az én oldalalom nem található}:
 
 \begin{itemize}
-\item Vonaldiagramnál több gráf választható.
-\item Bejelentkezési felület.
-\item Nyelvesítés.
+\item Vonaldiagramnál több gráf választható,
+\item Bejelentkezési felület,
+\item Nyelvesítés,
 \item Adatok letöltése.
 \end{itemize}
 
-\subsection {Miért fontosak a tőzsdei adatokat megjelenítő weboldalak?}
+\subsection {Miért fontosak a tőzsdét elemző weboldalak?}
 
 A tőzsdére történő befektetés jövedelmező vállalkozás lehet, de alapos kutatást és elemzést igényel a megalapozott döntések meghozatalához. Az egyik értékes erőforrás, amely jelentősen segítheti a befektetőket a döntéshozatali folyamatban, a grafikonrajzoló weboldalak. Átfogó adatvizsgálat, pénzügyi kimutatásokhoz és iparági betekintésekhez szokás használni. A tőzsde rendkívül dinamikus, az árfolyamok különböző tényezők miatt gyorsan ingadoznak. A grafikonrajzolók segítségével folyamatosan figyelemmel kísérhetőek a piaci viszonyok, és azonnali betekintés nyerhető.
 A technológiai fejlődésnek és a különféle platformok elérhetőségének köszönhetően minden eddiginél egyszerűbb megtalálni a releváns befektetéseket.

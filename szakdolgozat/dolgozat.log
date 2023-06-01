@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.17)  27 MAY 2023 14:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.17)  1 JUN 2023 13:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -516,9 +516,13 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__pdf_internal_box=\box61
 )
 (dolgozat.aux (cover/cimlap.aux) (cover/feladatkiiras.aux)
-(chapters/1_introduction.aux) (chapters/2_concept.aux) (chapters/3_design.aux)
-(chapters/4_implementation.aux) (chapters/5_test.aux) (chapters/6_summary.aux)
-(cover/hasznalati.aux))
+(chapters/1_introduction.aux) (chapters/2_theoretical_background.aux)
+(chapters/3_specification.aux) (chapters/4_implementation.aux
+
+LaTeX Warning: Label `fig:fetch' multiply defined.
+
+) (chapters/5_presentation.aux) (chapters/6_summary.aux) (cover/hasznalati.aux)
+)
 \openout1 = `dolgozat.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -609,7 +613,7 @@ LaTeX Info: Redefining \mit on input line 578.
 
 
 (cover/cimlap.tex
-<images/me_logo.png, id=54, 1204.5pt x 1148.29pt>
+<images/me_logo.png, id=194, 1204.5pt x 1148.29pt>
 File: images/me_logo.png Graphic file (type png)
 <use images/me_logo.png>
 Package pdftex.def Info: images/me_logo.png  used on input line 9.
@@ -650,17 +654,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
 
-Underfull \hbox (badness 10000) detected at line 42
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 46
 \T1/cmr/m/n/12 szakfelel®s
  []
 
@@ -670,24 +674,30 @@ Underfull \hbox (badness 10000) detected at line 42
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
-2.
+6.
  (C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 52--55
+Underfull \hbox (badness 10000) in paragraph at lines 56--59
 
  []
 
-[3]) [4] (dolgozat.toc)
+[3]) [4] (dolgozat.toc [1
+
+
+
+
+])
 \tf@toc=\write5
 \openout5 = `dolgozat.toc'.
 
- [1
 
-
-
-
-]
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.24 \cleardoublepage
+                      [2]
 \openout2 = `chapters/1_introduction.aux'.
 
  (chapters/1_introduction.tex
@@ -703,74 +713,224 @@ l.31 \include{chapters/1_introduction}
 
 
 ]
-\openout2 = `chapters/2_concept.aux'.
+\openout2 = `chapters/2_theoretical_background.aux'.
 
- (chapters/2_concept.tex
+
+(chapters/2_theoretical_background.tex
 2. fejezet.
-)
+<images/historyOfGraphs.png, id=290, 396.7322pt x 142.28156pt>
+File: images/historyOfGraphs.png Graphic file (type png)
+<use images/historyOfGraphs.png>
+Package pdftex.def Info: images/historyOfGraphs.png  used on input line 14.
+(pdftex.def)             Requested size: 317.38617pt x 113.8254pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 18.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.32 \include{chapters/2_concept}
-                                  [2
+l.23 
+      [2
 
 
 
 
-]
+ <./images/historyOfGraphs.png>]
+<images/lineChartExample.png, id=302, 1068.99374pt x 500.62032pt>
+File: images/lineChartExample.png Graphic file (type png)
+<use images/lineChartExample.png>
+Package pdftex.def Info: images/lineChartExample.png  used on input line 28.
+(pdftex.def)             Requested size: 320.70059pt x 150.18726pt.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.32 \include{chapters/2_concept}
-                                  [3]
-\openout2 = `chapters/3_design.aux'.
-
- (chapters/3_design.tex
-3. fejezet.
-File: images/me_logo.png Graphic file (type png)
-<use images/me_logo.png>
-Package pdftex.def Info: images/me_logo.png  used on input line 42.
-(pdftex.def)             Requested size: 361.35278pt x 344.48965pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
-nput line 53.
+l.39 \clearpage
+                [3 <./images/lineChartExample.png>]
+<images/barChartExample.png, id=312, 1068.99374pt x 500.62032pt>
+File: images/barChartExample.png Graphic file (type png)
+<use images/barChartExample.png>
+Package pdftex.def Info: images/barChartExample.png  used on input line 43.
+(pdftex.def)             Requested size: 320.70059pt x 150.18726pt.
+<images/pieChartExample.png, id=314, 578.16pt x 505.13719pt>
+File: images/pieChartExample.png Graphic file (type png)
+<use images/pieChartExample.png>
+Package pdftex.def Info: images/pieChartExample.png  used on input line 56.
+(pdftex.def)             Requested size: 231.2599pt x 202.05128pt.
+<images/radarChartExample.png, id=316, 578.91281pt x 499.11469pt>
+File: images/radarChartExample.png Graphic file (type png)
+<use images/radarChartExample.png>
+Package pdftex.def Info: images/radarChartExample.png  used on input line 69.
+(pdftex.def)             Requested size: 231.56102pt x 199.64232pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.54 \end{definition}
-                      [4
+l.72 \end{figure}
+                  [4
+
+ <./images/barChartExample.png> <./images/pieChartExample.png>] [5 <./images/ra
+darChartExample.png>] [6]
+<images/europeInvestExample.png, id=339, 1424.32124pt x 594.72188pt>
+File: images/europeInvestExample.png Graphic file (type png)
+<use images/europeInvestExample.png>
+Package pdftex.def Info: images/europeInvestExample.png  used on input line 129
+.
+(pdftex.def)             Requested size: 427.29967pt x 178.41794pt.
+ [7 <./images/europeInvestExample.png>]) [8]
+\openout2 = `chapters/3_specification.aux'.
+
+ (chapters/3_specification.tex
+3. fejezet.
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+[9
 
 
 
 
 ]
-Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
-line 57.
-Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 61.
-Package hyperref Info: bookmark level for unknown prooF defaults to 0 on input 
-line 65.
-Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
-put line 69.
-Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
- line 73.
-Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
-t line 77.
-) [5]
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+<images/htmlExample.png, id=359, 248.42813pt x 162.6075pt>
+File: images/htmlExample.png Graphic file (type png)
+<use images/htmlExample.png>
+Package pdftex.def Info: images/htmlExample.png  used on input line 59.
+(pdftex.def)             Requested size: 198.74277pt x 130.08617pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10]
+<images/canvasExample.png, id=365, 545.03625pt x 136.25906pt>
+File: images/canvasExample.png Graphic file (type png)
+<use images/canvasExample.png>
+Package pdftex.def Info: images/canvasExample.png  used on input line 73.
+(pdftex.def)             Requested size: 381.52278pt x 95.38068pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+[11 <./images/htmlExample.png> <./images/canvasExample.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
+<images/cssTypes.png, id=373, 602.25pt x 445.665pt>
+File: images/cssTypes.png Graphic file (type png)
+<use images/cssTypes.png>
+Package pdftex.def Info: images/cssTypes.png  used on input line 95.
+(pdftex.def)             Requested size: 301.12425pt x 222.83195pt.
+<images/bootstrap.png, id=376, 551.81157pt x 377.91188pt>
+File: images/bootstrap.png Graphic file (type png)
+<use images/bootstrap.png>
+Package pdftex.def Info: images/bootstrap.png  used on input line 106.
+(pdftex.def)             Requested size: 275.9051pt x 188.95547pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12 <./images/cssTypes.png>]
+<images/gridSystem.png, id=388, 950.04938pt x 176.91093pt>
+File: images/gridSystem.png Graphic file (type png)
+<use images/gridSystem.png>
+Package pdftex.def Info: images/gridSystem.png  used on input line 119.
+(pdftex.def)             Requested size: 380.01302pt x 70.7631pt.
+ [13 <./images/bootstrap.png> <./images/gridSystem.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
+
+ []
+
+<images/jsonExample.png, id=412, 285.31593pt x 147.55125pt>
+File: images/jsonExample.png Graphic file (type png)
+<use images/jsonExample.png>
+Package pdftex.def Info: images/jsonExample.png  used on input line 166.
+(pdftex.def)             Requested size: 256.78195pt x 132.79488pt.
+<images/chartExample.png, id=415, 490.83376pt x 493.845pt>
+File: images/chartExample.png Graphic file (type png)
+<use images/chartExample.png>
+Package pdftex.def Info: images/chartExample.png  used on input line 177.
+(pdftex.def)             Requested size: 294.50252pt x 296.30928pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/barChartJSExample.png, id=417, 1126.2075pt x 567.62062pt>
+File: images/barChartJSExample.png Graphic file (type png)
+<use images/barChartJSExample.png>
+Package pdftex.def Info: images/barChartJSExample.png  used on input line 184.
+(pdftex.def)             Requested size: 337.86487pt x 170.28749pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15 <./images/jsonExample.png>] [16 <./images/chartExample.png>]) [17 <./images
+/barChartJSExample.png>]
 \openout2 = `chapters/4_implementation.aux'.
 
  (chapters/4_implementation.tex
 4. fejezet.
-(C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-)
-(C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
+[18
+
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+[19]
+<images/demoAPI.png, id=449, 421.575pt x 46.67438pt>
+File: images/demoAPI.png Graphic file (type png)
+<use images/demoAPI.png>
+Package pdftex.def Info: images/demoAPI.png  used on input line 44.
+(pdftex.def)             Requested size: 379.41399pt x 42.00653pt.
+<images/postman.png, id=452, 740.0147pt x 295.85532pt>
+File: images/postman.png Graphic file (type png)
+<use images/postman.png>
+Package pdftex.def Info: images/postman.png  used on input line 58.
+(pdftex.def)             Requested size: 370.00644pt x 147.92729pt.
+ [20 <./images/demoAPI.png> <./images/postman.png>] [21]
+<images/navbarFunction.png, id=470, 349.305pt x 241.65282pt>
+File: images/navbarFunction.png Graphic file (type png)
+<use images/navbarFunction.png>
+Package pdftex.def Info: images/navbarFunction.png  used on input line 94.
+(pdftex.def)             Requested size: 279.44437pt x 193.32251pt.
+<images/datepicker.png, id=472, 340.27126pt x 313.17pt>
+File: images/datepicker.png Graphic file (type png)
+<use images/datepicker.png>
+Package pdftex.def Info: images/datepicker.png  used on input line 103.
+(pdftex.def)             Requested size: 238.18825pt x 219.21748pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[22 <./images/navbarFunction.png>]
+<images/dateValidation.png, id=482, 302.63063pt x 298.86656pt>
+File: images/dateValidation.png Graphic file (type png)
+<use images/dateValidation.png>
+Package pdftex.def Info: images/dateValidation.png  used on input line 116.
+(pdftex.def)             Requested size: 226.97241pt x 224.14935pt.
+ [23 <./images/datepicker.png> <./images/dateValidation.png>]
+<images/emptyDate.png, id=491, 425.33907pt x 132.495pt>
+File: images/emptyDate.png Graphic file (type png)
+<use images/emptyDate.png>
+Package pdftex.def Info: images/emptyDate.png  used on input line 125.
+(pdftex.def)             Requested size: 382.8016pt x 119.24438pt.
+ (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
@@ -778,85 +938,277 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 (C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-)) [6
+)
+<images/fetch.png, id=493, 294.34969pt x 187.45032pt>
+File: images/fetch.png Graphic file (type png)
+<use images/fetch.png>
+Package pdftex.def Info: images/fetch.png  used on input line 140.
+(pdftex.def)             Requested size: 235.48006pt x 149.96043pt.
+<images/types.png, id=494, 466.74374pt x 459.96844pt>
+File: images/types.png Graphic file (type png)
+<use images/types.png>
+Package pdftex.def Info: images/types.png  used on input line 149.
+(pdftex.def)             Requested size: 280.0484pt x 275.98318pt.
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[24 <./images/emptyDate.png> <./images/fetch.png>]
+<images/chartData.png, id=511, 458.46281pt x 164.86594pt>
+File: images/chartData.png Graphic file (type png)
+<use images/chartData.png>
+Package pdftex.def Info: images/chartData.png  used on input line 163.
+(pdftex.def)             Requested size: 366.77074pt x 131.8929pt.
+ [25 <./images/types.png> <./images/chartData.png>]
+<images/makeNew.png, id=521, 335.00156pt x 105.39375pt>
+File: images/makeNew.png Graphic file (type png)
+<use images/makeNew.png>
+Package pdftex.def Info: images/makeNew.png  used on input line 172.
+(pdftex.def)             Requested size: 268.0016pt x 84.3151pt.
+<images/nodeTest.png, id=524, 380.17032pt x 150.5625pt>
+File: images/nodeTest.png Graphic file (type png)
+<use images/nodeTest.png>
+Package pdftex.def Info: images/nodeTest.png  used on input line 184.
+(pdftex.def)             Requested size: 342.15012pt x 135.50497pt.
+ [26 <./images/makeNew.png> <./images/nodeTest.png>]
+<images/packageJSON.png, id=535, 361.35pt x 317.68687pt>
+File: images/packageJSON.png Graphic file (type png)
+<use images/packageJSON.png>
+Package pdftex.def Info: images/packageJSON.png  used on input line 200.
+(pdftex.def)             Requested size: 325.21199pt x 285.91553pt.
+<images/serverPort.png, id=538, 319.94531pt x 126.4725pt>
+File: images/serverPort.png Graphic file (type png)
+<use images/serverPort.png>
+Package pdftex.def Info: images/serverPort.png  used on input line 211.
+(pdftex.def)             Requested size: 287.9481pt x 113.82419pt.
 
 
-]
-\openout2 = `chapters/5_test.aux'.
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[27 <./images/packageJSON.png>]
+<images/createServer.png, id=550, 350.05782pt x 151.3153pt>
+File: images/createServer.png Graphic file (type png)
+<use images/createServer.png>
+Package pdftex.def Info: images/createServer.png  used on input line 222.
+(pdftex.def)             Requested size: 350.05695pt x 151.31493pt.
+<images/apiCall.png, id=553, 387.69844pt x 253.69781pt>
+File: images/apiCall.png Graphic file (type png)
+<use images/apiCall.png>
+Package pdftex.def Info: images/apiCall.png  used on input line 231.
+(pdftex.def)             Requested size: 310.15916pt x 202.95851pt.
 
 
-(chapters/5_test.tex
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[28 <./images/serverPort.png> <./images/createServer.png>]
+<images/getData.png, id=568, 587.19376pt x 139.27031pt>
+File: images/getData.png Graphic file (type png)
+<use images/getData.png>
+Package pdftex.def Info: images/getData.png  used on input line 252.
+(pdftex.def)             Requested size: 411.03282pt x 97.48854pt.
+) [29 <./images/apiCall.png> <./images/getData.png>]
+\openout2 = `chapters/5_presentation.aux'.
+
+ (chapters/5_presentation.tex
 5. fejezet.
-) [7
+<images/flowchart.png, id=577, 663.47874pt x 603.25375pt>
+File: images/flowchart.png Graphic file (type png)
+<use images/flowchart.png>
+Package pdftex.def Info: images/flowchart.png  used on input line 11.
+(pdftex.def)             Requested size: 331.73856pt x 301.62613pt.
+[30
 
 
 
 
-]
+ <./images/flowchart.png>]
+<images/home.png, id=587, 612.03656pt x 565.36218pt>
+File: images/home.png Graphic file (type png)
+<use images/home.png>
+Package pdftex.def Info: images/home.png  used on input line 35.
+(pdftex.def)             Requested size: 244.81029pt x 226.14085pt.
+ [31 <./images/home.png>]
+<images/graphPlotter.png, id=596, 796.47563pt x 586.44093pt>
+File: images/graphPlotter.png Graphic file (type png)
+<use images/graphPlotter.png>
+Package pdftex.def Info: images/graphPlotter.png  used on input line 53.
+(pdftex.def)             Requested size: 318.58461pt x 234.5722pt.
+ [32 <./images/graphPlotter.png>]
+<images/invest.png, id=606, 587.94656pt x 506.6428pt>
+File: images/invest.png Graphic file (type png)
+<use images/invest.png>
+Package pdftex.def Info: images/invest.png  used on input line 72.
+(pdftex.def)             Requested size: 293.97256pt x 253.32079pt.
+ [33 <./images/invest.png>]
+<images/contact.png, id=616, 543.53062pt x 360.59718pt>
+File: images/contact.png Graphic file (type png)
+<use images/contact.png>
+Package pdftex.def Info: images/contact.png  used on input line 84.
+(pdftex.def)             Requested size: 271.76463pt x 180.29814pt.
+ [34 <./images/contact.png>]
+<images/navbar.png, id=625, 411.78844pt x 266.49562pt>
+File: images/navbar.png Graphic file (type png)
+<use images/navbar.png>
+Package pdftex.def Info: images/navbar.png  used on input line 102.
+(pdftex.def)             Requested size: 205.8937pt x 133.24748pt.
+<images/footer.png, id=627, 579.66562pt x 439.6425pt>
+File: images/footer.png Graphic file (type png)
+<use images/footer.png>
+Package pdftex.def Info: images/footer.png  used on input line 113.
+(pdftex.def)             Requested size: 289.83209pt x 219.82071pt.
+ [35 <./images/navbar.png> <./images/footer.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+[36]) [37]
 \openout2 = `chapters/6_summary.aux'.
 
  (chapters/6_summary.tex
 6. fejezet.
-) [8
+[38
 
 
 
 
-] (dolgozat.bbl) [9
+] [39]) [40] (dolgozat.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 4--6
+[]\T1/cmr/m/n/12 Forrás:[]$\T1/cmtt/m/n/12 https : / / www . portfolio . hu / p
+rof / 20181005 /
+ []
+
+
+Underfull \hbox (badness 5331) in paragraph at lines 4--6
+\T1/cmtt/m/n/12 a-[]grafikon-[]ami-[]eleteket-[]mentett-[]299542$[]\T1/cmr/m/n/
+12 , \T1/cmr/m/it/12 Fel-hasz-nál-tam a tör-té-net be-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+[]\T1/cmr/m/n/12 Forrás: []$\T1/cmtt/m/n/12 https : / / admiralmarkets . com / 
+hu / education / articles /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+[]\T1/cmr/m/n/12 Forrás: []$\T1/cmtt/m/n/12 https : / / www . otpbank . hu / ot
+palapkezelo / hu / Befektetesi _ alapok /
+ []
+
+
+Overfull \hbox (55.35704pt too wide) in paragraph at lines 26--27
+[]\T1/cmr/m/n/12 Forrás: []$\T1/cmtt/m/n/12 https : / / docplayer . hu / 706911
+4-[]Arfolyamok-[]miskolci-[]egyetem-[]mesterkepzes .|
+ []
+
+
+Overfull \hbox (170.74298pt too wide) in paragraph at lines 29--30
+[]\T1/cmr/m/n/12 Forrás: []$\T1/cmtt/m/n/12 https : / / promanconsulting . hu /
+ mi-[]az-[]agilis-[]modszertan-[]legelterjedtebb-[]agilis-[]modszertanok/$[]\T1
+/cmr/m/n/12 ,|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+[]\T1/cmr/m/n/12 Forrás: []$\T1/cmtt/m/n/12 https : / / getbootstrap . com / do
+cs / 5 . 3 / getting-[]started /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+[]\T1/cmr/m/n/12 Forrás: []$\T1/cmtt/m/n/12 https : / / www . w3schools . com /
+ bootstrap / bootstrap _ grid _ system .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+[]\T1/cmr/m/n/12 Forrás: []$\T1/cmtt/m/n/12 https : / / eodhistoricaldata . com
+ / financial-[]apis /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+\T1/cmtt/m/n/12 stock-[]etfs-[]fundamental-[]data-[]feeds/$[]\T1/cmr/m/n/12 , \
+T1/cmr/m/it/12 T®zs-dei ada-tok API hí-vá-sok-kal
+ []
+
+[41
 
 
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+[]\T1/cmr/m/n/12 Forrás: []$\T1/cmtt/m/n/12 https : / / www . simplilearn . com
+ / tutorials / git-[]tutorial /
+ []
+
+
+Overfull \hbox (21.57916pt too wide) in paragraph at lines 71--72
+[]\T1/cmr/m/n/12 Forrás: []$\T1/cmtt/m/n/12 https : / / www . honlapdiszkont . 
+com / milyen-[]a-[]jol-[]konvertalo-[]kezdolap/$[]\T1/cmr/m/n/12 ,|
+ []
+
+
+Underfull \hbox (badness 2142) in paragraph at lines 74--75
+[]\T1/cmr/m/n/12 Forrás: []$\T1/cmtt/m/n/12 https : / / www . investopedia . co
+m / terms / s / stock-[]analysis . asp$[]\T1/cmr/m/n/12 , \T1/cmr/m/it/12 Fel-
+ []
+
+) [42]
 \openout2 = `cover/hasznalati.aux'.
 
- (cover/hasznalati.tex) [10
+ (cover/hasznalati.tex) [43
 
 ]
 \tf@thm=\write6
 \openout6 = `dolgozat.thm'.
 
- (dolgozat.aux
-(cover/cimlap.aux) (cover/feladatkiiras.aux) (chapters/1_introduction.aux)
-(chapters/2_concept.aux) (chapters/3_design.aux) (chapters/4_implementation.aux
-) (chapters/5_test.aux) (chapters/6_summary.aux) (cover/hasznalati.aux))
+ (dolgozat.aux (cover/cimlap.aux)
+(cover/feladatkiiras.aux) (chapters/1_introduction.aux)
+(chapters/2_theoretical_background.aux) (chapters/3_specification.aux)
+(chapters/4_implementation.aux) (chapters/5_presentation.aux)
+(chapters/6_summary.aux) (cover/hasznalati.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `dolgozat.out' has not changed.
-(rerunfilecheck)             Checksum: D406E56C3F770BA742BDE6A0A30E6AE3;1699.
+(rerunfilecheck)             Checksum: 7D0A39B51D64378793B4DA2ADAE188E8;7067.
  ) 
 Here is how much of TeX's memory you used:
- 16627 strings out of 476360
- 264343 string characters out of 5797811
- 1869993 words of memory out of 5000000
- 36669 multiletter control sequences out of 15000+600000
- 533591 words of font info for 83 fonts, out of 8000000 for 9000
+ 17083 strings out of 476360
+ 274329 string characters out of 5797811
+ 1864993 words of memory out of 5000000
+ 36951 multiletter control sequences out of 15000+600000
+ 534732 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,11n,90p,884b,1319s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,12n,90p,1439b,1245s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Bencze Zsombor\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
-i600\ecsl1200.pk> <C:\Users\Bencze Zsombor\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Bencze Zsombor\AppData\Local\MiKTeX\
-fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\Bencze Zsombor\AppDat
-a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\Bencze
- Zsombor\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <
+i600\ecrm0800.pk> <C:\Users\Bencze Zsombor\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\tcti1200.pk> <C:\Users\Bencze Zsombor\AppData\Local\MiKTeX\
+fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1200.pk> <C:\Users\Bencze Zsombor\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Bencze
+ Zsombor\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <
 C:\Users\Bencze Zsombor\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600
-\ecti1200.pk> <C:\Users\Bencze Zsombor\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
-appen/ec/dpi600\ecbx1200.pk> <C:\Users\Bencze Zsombor\AppData\Local\MiKTeX\font
-s/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Bencze Zsombor\AppData\Lo
-cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1200.pk> <C:\Users\Bencze Zso
-mbor\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\U
-sers\Bencze Zsombor\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecb
-x1440.pk> <C:\Users\Bencze Zsombor\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappe
-n/ec/dpi600\ecbx2074.pk> <C:\Users\Bencze Zsombor\AppData\Local\MiKTeX\fonts/pk
-/ljfour/jknappen/ec/dpi600\ecxc1440.pk> <C:\Users\Bencze Zsombor\AppData\Local\
-MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc2488.pk><C:/Program Files/MiKTeX/
-fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><C:/Program Files/MiKTeX/font
-s/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Bencze Zsombor/AppData/Roa
-ming/MiKTeX/fonts/type1/public/txfonts/t1xbtt.pfb><C:/Users/Bencze Zsombor/AppD
-ata/Roaming/MiKTeX/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on dolgozat.pdf (15 pages, 366091 bytes).
+\tcrm1200.pk> <C:\Users\Bencze Zsombor\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
+appen/ec/dpi600\ectt1200.pk> <C:\Users\Bencze Zsombor\AppData\Local\MiKTeX\font
+s/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Bencze Zsombor\AppData\Lo
+cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Bencze Zso
+mbor\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\U
+sers\Bencze Zsombor\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecx
+c1200.pk> <C:\Users\Bencze Zsombor\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappe
+n/ec/dpi600\ecrm1440.pk> <C:\Users\Bencze Zsombor\AppData\Local\MiKTeX\fonts/pk
+/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Bencze Zsombor\AppData\Local\
+MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\Bencze Zsombor
+\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1440.pk> <C:\Users
+\Bencze Zsombor\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc248
+8.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb
+><C:/Users/Bencze Zsombor/AppData/Roaming/MiKTeX/fonts/type1/public/txfonts/t1x
+btt.pfb><C:/Users/Bencze Zsombor/AppData/Roaming/MiKTeX/fonts/type1/public/txfo
+nts/t1xtt.pfb>
+Output written on dolgozat.pdf (49 pages, 3238029 bytes).
 PDF statistics:
- 655 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
- 110 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1386 PDF objects out of 1440 (max. 8388607)
+ 185 named destinations out of 1000 (max. 500000)
+ 575 words of extra memory for PDF output out of 10000 (max. 10000000)
 
